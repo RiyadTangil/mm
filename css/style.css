@@ -1,7 +1,7 @@
 /********** Template CSS **********/
 :root {
     --primary: #015FC9;
-    --secondary: #0DD3F1;
+    --secondary: #15233C;
     --light: #F6F7FC;
     --dark: #15233C;
 }
@@ -403,7 +403,7 @@
     align-items: center;
     justify-content: center;
     color: #FFFFFF;
-    background: var(--primary);
+    background: var(--secondary);
     border-radius: 10px;
     font-size: 22px;
     transition: .5s;

@@ -96,7 +96,10 @@
         color: #555;
         line-height: 1.6;
         margin: 20px 0 30px;
-      
+        font-size: 13px;
+      }
+      .text-secondary-ctm {
+        color: #414651;
       }
 
       .btn-dark-custom {
@@ -137,7 +140,7 @@
       .products-section {
         overflow: hidden;
         width: 100%;
-        padding: 30px 0;
+        /* padding: 10px 0 10px 0; */
       }
 
       .product-carousel {
@@ -160,7 +163,7 @@
         overflow: hidden;
         height: 180px;
         display: flex;
-        margin: 0px 12px;
+
         align-items: center;
         justify-content: center;
         transition: transform 0.3s ease;
@@ -176,6 +179,7 @@
         object-fit: contain;
       }
 
+     
       .carousel-control-prev,
       .carousel-control-next {
         width: 5%;
@@ -196,7 +200,7 @@
       .product-carousel .active.carousel-item-end {
         transform: translateX(16.6%);
       }
-      
+
       .product-carousel .carousel-item-prev:not(.carousel-item-end),
       .product-carousel .active.carousel-item-start {
         transform: translateX(-16.6%);
@@ -508,7 +512,7 @@
               </div>
             </div>
           </div>
-          
+
           <div class="carousel-item">
             <div class="row">
               <div class="col-md-2 d-none d-md-block">
@@ -577,7 +581,7 @@
               </div>
             </div>
           </div>
-          
+
           <div class="carousel-item">
             <div class="row">
               <div class="col-md-2 d-none d-md-block">
@@ -655,18 +659,21 @@
         <div class="row mb-5">
           <div class="col-lg-5">
             <div class="row mb-4">
-              <div class="col-md-6">
-                <img
-                  src="images/about/about1.png"
-                  alt="Consulting"
-                  class="img-fluid rounded"
-                />
+              <div class="col-md-4 d-flex align-items-center">
+                <div>
+                  <img
+                    src="images/about/about1.png"
+                    alt="Consulting"
+                    class="img-fluid rounded"
+                  />
+                </div>
               </div>
-              <div class="col-md-6">
+              <div class="col-md-8">
                 <img
+                  style="height: 100%; width: 90%"
                   src="images/about/image2.png"
                   alt="Business"
-                  class="img-fluid rounded"
+                  class="rounded"
                 />
               </div>
             </div>
@@ -852,7 +859,7 @@
                 </div>
                 <div class="w-100">
                   <h3 class="h3 fw-bold mb-2">SAKURA Ultra Flow</h3>
-                  <p class="mb-0 text-secondary border-bottom pb-3">
+                  <p class="mb-0 text-secondary-ctm border-bottom pb-3">
                     Industrial water treatment products specialists.
                   </p>
                 </div>
@@ -867,7 +874,7 @@
                   <h3 class="h3 fw-bold mb-2">
                     MMK Construction Management and Supply
                   </h3>
-                  <p class="mb-0 text-secondary border-bottom pb-3">
+                  <p class="mb-0 text-secondary-ctm border-bottom pb-3">
                     Comprehensive construction solutions
                   </p>
                 </div>
@@ -880,7 +887,9 @@
                 </div>
                 <div>
                   <h3 class="h3 fw-bold mb-2">MMK Investments</h3>
-                  <p class="mb-0 text-secondary">Strategic wealth management</p>
+                  <p class="mb-0 text-secondary-ctm">
+                    Strategic wealth management
+                  </p>
                 </div>
               </div>
             </div>
@@ -902,10 +911,10 @@
               class="badge border text-dark px-3 py-2 rounded-pill mb-3"
               >Our Story</span
             >
-            <h4 class="text-secondary mb-3">The Story of MMK Group</h4>
-            <h2 class="display-4 fw-bold mb-4">
+            <h4 class="text-secondary-ctm mb-3">The Story of MMK Group</h4>
+            <h3 class="display-6 fw-bold mb-4">
               A Vision Transformed into a Global Empire
-            </h2>
+            </h3>
             <p class="mb-4">
               The journey of MMK Group is not just about business; it's about
               passion, perseverance, and purpose. Founded by Mr. Mohd Mehrab
@@ -933,10 +942,18 @@
       </div>
     </section>
     <!-- Testimonial Start -->
-    <div class="container-xxl py-5">
+    <div class="container-xxl py-5 testimonial-container">
       <div class="container">
+        <div class="d-flex justify-content-center">
+          <span
+            style="background: #ffffff"
+            class="badge border bg-ligh text-center text-dark px-3 py-2 rounded-pill mb-3"
+          >
+            Testimonial
+          </span>
+        </div>
         <div class="text-center mx-auto" style="max-width: 500px">
-          <h1 class="display-6 mb-5">What They Say About Our Insurance</h1>
+          <h1 class="display-6 mb-5">Clients Speak Volumes About Us</h1>
         </div>
         <div class="row g-5">
           <div class="col-lg-3 d-none d-lg-block">
@@ -967,9 +984,9 @@
                   alt=""
                 />
                 <p class="fs-5">
-                  Dolores sed duo clita tempor justo dolor et stet lorem kasd
-                  labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy
-                  et labore et tempor diam tempor erat.
+                  MMK exceeded our expectations with their seamless trading
+                  solutions and exceptional service. Their expertise made our
+                  import process effortless. Highly recommend!
                 </p>
                 <h5>Client Name</h5>
                 <span>Profession</span>
@@ -981,9 +998,9 @@
                   alt=""
                 />
                 <p class="fs-5">
-                  Dolores sed duo clita tempor justo dolor et stet lorem kasd
-                  labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy
-                  et labore et tempor diam tempor erat.
+                  MMK exceeded our expectations with their seamless trading
+                  solutions and exceptional service. Their expertise made our
+                  import process effortless. Highly recommend!
                 </p>
                 <h5>Client Name</h5>
                 <span>Profession</span>
@@ -995,9 +1012,9 @@
                   alt=""
                 />
                 <p class="fs-5">
-                  Dolores sed duo clita tempor justo dolor et stet lorem kasd
-                  labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy
-                  et labore et tempor diam tempor erat.
+                  MMK exceeded our expectations with their seamless trading
+                  solutions and exceptional service. Their expertise made our
+                  import process effortless. Highly recommend!
                 </p>
                 <h5>Client Name</h5>
                 <span>Profession</span>
@@ -1279,41 +1296,41 @@
           interval: 2000,
           ride: "carousel",
           pause: false,
-          wrap: true
+          wrap: true,
         });
-        
+
         // Prevent pause on hover
-        productCarousel.addEventListener('mouseenter', () => {
+        productCarousel.addEventListener("mouseenter", () => {
           carousel.cycle();
         });
-        
+
         // Smooth transition between slides
-        const carouselItems = document.querySelectorAll('.carousel-item');
-        carouselItems.forEach(item => {
-          item.style.transition = 'transform 1s ease';
+        const carouselItems = document.querySelectorAll(".carousel-item");
+        carouselItems.forEach((item) => {
+          item.style.transition = "transform 1s ease";
         });
-        
+
         // Add mouse drag functionality
         let isDragging = false;
         let startPosition = 0;
         let currentTranslate = 0;
-        
-        productCarousel.addEventListener('mousedown', (e) => {
+
+        productCarousel.addEventListener("mousedown", (e) => {
           isDragging = true;
           startPosition = e.clientX;
-          productCarousel.style.cursor = 'grabbing';
+          productCarousel.style.cursor = "grabbing";
         });
-        
-        productCarousel.addEventListener('mousemove', (e) => {
+
+        productCarousel.addEventListener("mousemove", (e) => {
           if (!isDragging) return;
           const currentPosition = e.clientX;
           currentTranslate = currentPosition - startPosition;
         });
-        
-        productCarousel.addEventListener('mouseup', (e) => {
+
+        productCarousel.addEventListener("mouseup", (e) => {
           isDragging = false;
-          productCarousel.style.cursor = 'grab';
-          
+          productCarousel.style.cursor = "grab";
+
           // Determine direction based on drag distance
           if (currentTranslate > 50) {
             // Dragged right - go to previous slide
@@ -1322,24 +1339,23 @@
             // Dragged left - go to next slide
             carousel.next();
           }
-          
+
           // Reset translate
           currentTranslate = 0;
         });
-        
-        productCarousel.addEventListener('mouseleave', () => {
+
+        productCarousel.addEventListener("mouseleave", () => {
           if (isDragging) {
             isDragging = false;
-            productCarousel.style.cursor = '';
+            productCarousel.style.cursor = "";
           }
         });
-        
+
         // Prevent default drag behavior
-        productCarousel.addEventListener('dragstart', (e) => {
+        productCarousel.addEventListener("dragstart", (e) => {
           e.preventDefault();
         });
       });
     </script>
   </body>
 </html>
-
