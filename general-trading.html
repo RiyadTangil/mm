@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MMK Consultants - General Trading Services</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <style>
+      /* Custom styles */
+      .top-bar {
+        background-color: #212121;
+        color: white;
+        padding: 8px 0;
+        font-size: 14px;
+      }
+      .top-bar a {
+        color: white;
+        text-decoration: none;
+      }
+      .social-icons a {
+        margin-left: 15px;
+        color: white;
+      }
+      .navbar {
+        padding: 15px 0;
+      }
+      .navbar-nav .nav-link {
+        color: #212121;
+        margin: 0 10px;
+        font-weight: 500;
+      }
+      .navbar-brand img {
+        width: 200px;
+      }
+      .btn-quote {
+        background-color: #212121;
+        color: white;
+        border-radius: 4px;
+        padding: 8px 20px;
+      }
+      .hero-heading {
+        font-size: 52px;
+        font-weight: bold;
+      }
+      .nav-link.active {
+        font-weight: 700;
+        color: #000 !important;
+      }
+      .service-section {
+        margin-bottom: 60px;
+      }
+      .service-category {
+        font-size: 14px;
+        color: #6c757d;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 5px;
+      }
+      .service-img {
+        border-radius: 8px;
+        overflow: hidden;
+        height: 100%;
+        object-fit: cover;
+      }
+      .list-item {
+        margin-bottom: 8px;
+      }
+      .btn-custom {
+        background-color: #212121;
+        color: white;
+        border-radius: 4px;
+        padding: 8px 16px;
+        text-decoration: none;
+        font-size: 14px;
+        transition: all 0.3s ease;
+      }
+      .btn-custom:hover {
+        background-color: #333;
+        color: white;
+      }
+      .feature-icon {
+        font-size: 24px;
+        margin-bottom: 15px;
+        color: #212121;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar End -->
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+      <div class="container d-flex justify-content-between align-items-center">
+        <div class="contact-info">
+          <span class="me-3"
+            ><i class="fas fa-phone-alt me-2"></i>+88 012 345 678 90</span
+          >
+          <span class="me-3"
+            ><i class="far fa-envelope me-2"></i>info@example.com</span
+          >
+          <span><i class="far fa-clock me-2"></i>Mon - Fri: 09 AM - 09 PM</span>
+        </div>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation Menu -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="images/about/aboutL_logo.png" alt="MMK Consultants Logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto bg-light">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle active"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                Our Services
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item active" href="general-trading.html"
+                    >General Trading</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Business Consulting</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Import & Export</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="documents.html">Documents & Forms</a>
+            </li>
+          </ul>
+          <a href="#" class="btn btn-quote">Get a Quote</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-5 pb-3 bg-light">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <p
+              style="background-color: #ffffff"
+              class="mb-1 text-secondary border d-inline-block rounded-4 p-1 px-2"
+            >
+              General Trading
+            </p>
+            <h1 class="display-5 fw-bold mb-4">
+              Your Trusted Partner in Global General Trading Solutions
+            </h1>
+
+            <a href="contact.html" class="btn btn-dark px-4 py-2 rounded-pill"
+              >Contact Us</a
+            >
+          </div>
+          <div class="col-lg-6 d-flex align-self-end">
+            <p>
+              We specialize in delivering a broad range of high-quality products
+              across diverse industries, ensuring optimal solutions for even the
+              unique needs of our clients. With years of experience in global
+              trade, MMK Consultants is your trusted partner for bringing you
+              products of choice and competitive advantages.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="team-image py-5">
+      <div class="container">
+        <img
+          src="images/tranding_service/Image (3).png"
+          alt="MMK Team Meeting"
+          class="img-fluid rounded-4 w-100"
+          style="height: 400px; object-fit: cover"
+        />
+      </div>
+    </section>
+
+    <!-- Grains and Cereals Section -->
+    <section class="service-section py-5 bg-light">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <!-- <p class="service-category">Products We Offer</p> -->
+            <h2 class="h2 mb-4">Grains and Cereals</h2>
+            <p
+              style="background-color: #ffffff"
+              class="mb-4 d-inline-block py-1 px-3 border rounded-pill"
+            >
+              FMCG
+            </p>
+
+            <h5 class="h6 fw-bold mb-3">FMCG (Fast-Moving Consumer Goods)</h5>
+            <ul class="list-unstyled mb-4">
+              <li class="list-item">
+                <i class="me-2">&#9679;</i>
+                <strong>Grains and Cereals:</strong> Rice, wheat, corn, oats,
+                barley, spelta
+              </li>
+              <li class="list-item">
+                <i class="me-2">&#9679;</i>
+                <strong>Fruits and Vegetables:</strong> Apples, oranges, grapes
+              </li>
+              <li class="list-item">
+                <i class="me-2">&#9679;</i>
+                <strong>Dairy Products:</strong> Milk, powder, cheese
+              </li>
+              <li class="list-item">
+                <i class="me-2">&#9679;</i>
+                <strong>Meat Products:</strong> Beef, chicken, mutton
+              </li>
+              <li class="list-item">
+                <i class="me-2">&#9679;</i>
+                <strong>Spices and Herbs:</strong> Chili pepper, garlic, ginger,
+                cinnamon, cumin
+              </li>
+            </ul>
+
+            <a href="#" class="btn btn-custom">Learn More About FMCG</a>
+          </div>
+          <div class="col-lg-6">
+            <img
+              src="images/tranding_service/image 4 (1).png"
+              alt="Grains and Cereals"
+              class="img-fluid rounded-3 service-img"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Metallurgy and Steel Industry Section -->
+    <section class="service-section py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <img
+              src="images/tranding_service/image 4 (2).png"
+              alt="Metallurgy and Steel Industry"
+              class="img-fluid rounded-3 pe-4"
+            />
+          </div>
+          <div class="col-md-6">
+            <p
+              class="service-category mb-1 rounded-pill bg-light py-1 px-2 d-inline-block"
+            >
+              Metallurgy and Steel Industry
+            </p>
+            <h2 class="h2 mb-3">Metallurgy and Steel Industry</h2>
+            <p class="mb-4">
+              We provide a comprehensive range of high-quality metallurgy and
+              steel products, including
+              <strong>Pig Iron, Zinc Ingot, Ferro Silicon, Magnesium</strong>,
+              and more. Our solutions are designed to meet the diverse demands
+              of the global market, ensuring superior performance, durability,
+              and reliability for various industrial applications.
+            </p>
+            <a href="#" class="btn btn-dark px-3 py-2 mb-4"
+              >Discover Our Steel Industry Solutions</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Plastics and Polymer Section -->
+    <section class="service-section py-5 bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <p
+              style="background-color: #ffffff"
+              class="service-category mb-1 rounded-pill py-1 px-2 d-inline-block"
+            >
+              Plastics and Polymer
+            </p>
+            <h2 class="h2 mb-3">
+              Solutions for the Plastics and Polymer Industry
+            </h2>
+            <p class="mb-4">
+              Our extensive range of high-quality plastics and polymer products,
+              including
+              <strong>PVC Resin, HDPE, Acrylic Polymers, ABS Resin</strong>, and
+              more, empowers industries with durable, versatile, and sustainable
+              materials. We deliver tailored solutions to meet the evolving
+              needs of global manufacturers and businesses.
+            </p>
+            <a href="#" class="btn btn-dark px-3 py-2 mb-4"
+              >View Plastics & Polymer Products</a
+            >
+          </div>
+          <div class="col-md-6">
+            <img
+              src="images/tranding_service/image 4 (3).png"
+              alt="Plastics and Polymer"
+              class="img-fluid rounded-3"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Chemicals and Additives Section -->
+    <section class="service-section py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <img
+              src="images/tranding_service/chemicals.jpg"
+              alt="Chemicals and Additives"
+              class="img-fluid rounded-3"
+            />
+          </div>
+          <div class="col-md-6">
+            <p class="service-category mb-1">Chemicals and Additives</p>
+            <h2 class="h2 mb-3">
+              Chemicals and Additives for Diverse Industries
+            </h2>
+            <p class="mb-4">
+              We offer a wide array of premium chemicals and additives,
+              including
+              <strong>Carburizer, Phenolic Resin, Hexamine, PE Wax</strong>, and
+              more, to enhance industrial processes and product performance. Our
+              solutions are trusted for their quality, consistency, and ability
+              to meet the specialized needs of global markets.
+            </p>
+            <a href="#" class="btn btn-dark px-3 py-2 mb-4"
+              >Explore Chemicals and Additives</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Construction and Cement Industry Section -->
+    <section class="service-section py-5 bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <p class="service-category mb-1">Construction and Cement</p>
+            <h2 class="h2 mb-3">
+              Products for Construction and Cement Industry
+            </h2>
+            <p class="mb-4">
+              Our diverse portfolio of construction and cement industry
+              products, including
+              <strong>Clinker, Gypsum, Limestone, Fly Ash</strong>, and more,
+              provides the foundation for durable and sustainable
+              infrastructure. We deliver reliable, high-grade materials to
+              support construction projects of all scales across the globe.
+            </p>
+            <a href="#" class="btn btn-dark px-3 py-2 mb-4"
+              >Learn More About Construction Materials</a
+            >
+          </div>
+          <div class="col-md-6">
+            <img
+              src="images/tranding_service/construction.jpg"
+              alt="Construction Materials"
+              class="img-fluid rounded-3"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Let's Work Together Section -->
+    <section
+      style="margin-bottom: -100px"
+      class="work-together-section py-5 mt-n5 pt-0 pb-0"
+    >
+      <div class="container py-5">
+        <div
+          class="row bg-light rounded-4 shadow-sm p-4 position-relative overflow-hidden"
+        >
+          <div class="col-lg-7 py-4">
+            <span
+              style="background-color: #ffffff"
+              class="badge border text-dark px-3 py-2 rounded-pill mb-3"
+              >Let's Work Together</span
+            >
+            <h2 class="display-5 fw-bold mb-4">
+              Partner with Us to Simplify Your Trading Journey
+            </h2>
+            <p class="lead mb-4">
+              We simplify complex trading processes, deliver high-quality
+              products, and cater to diverse industry needs with precision and
+              reliability.
+            </p>
+            <a href="contact.html" class="btn btn-dark rounded-pill px-4 py-2">
+              Contact Us <i class="fas fa-arrow-right ms-2"></i>
+            </a>
+          </div>
+          <div
+            class="col-lg-5 d-none d-lg-flex align-items-center justify-content-end"
+          >
+            <img
+              src="images/testimonial/Vectors.png"
+              class="img-fluid"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+      <div class="container pt-5">
+        <div class="row mb-5">
+          <div class="col-lg-3 mb-4 mb-lg-0">
+            <div class="d-flex align-items-center mb-3">
+              <div class="me-2">
+                <img src="images/footer/IMG_1815 1.png" alt="" />
+              </div>
+              <div class="logo-text text-white">
+                <span class="fw-bold fs-4">MMK</span> Consultants
+              </div>
+            </div>
+            <p class="mb-4">Opening Doors to Global Trade.</p>
+
+            <div class="newsletter-form mb-4">
+              <div class="input-group">
+                <input
+                  type="email"
+                  class="form-control bg-transparent text-white"
+                  placeholder="Email"
+                  aria-label="Email"
+                  style="
+                    border-color: rgba(255, 255, 255, 0.3);
+                    border-radius: 4px;
+                    color: white;
+                  "
+                />
+                <button
+                  class="btn ms-2"
+                  type="button"
+                  style="
+                    border-color: rgba(255, 255, 255, 0.3);
+                    background-color: transparent;
+                    color: white;
+                    border-radius: 0 4px 4px 0;
+                  "
+                >
+                  Subscribe
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <h5 class="fw-bold mb-3">Links</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="about.html" class="text-white text-decoration-none"
+                  >About us</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-white text-decoration-none"
+                  >Properties</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-white text-decoration-none"
+                  >Property Details</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-white text-decoration-none">Blog</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-3">
+            <h5 class="fw-bold mb-3">Information</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="contact.html" class="text-white text-decoration-none"
+                  >Contact us</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-white text-decoration-none"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-white text-decoration-none">FAQ</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-white text-decoration-none">404</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 mt-4 mt-lg-0">
+            <h5 class="fw-bold mb-3">Contact</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">+14379816442</li>
+              <li class="mb-2">procurement@mmkconsultants.ca</li>
+            </ul>
+            <div class="social-links mt-3">
+              <a
+                href="#"
+                class="text-white me-2 d-inline-block"
+                style="
+                  width: 32px;
+                  height: 32px;
+                  border: 1px solid rgba(255, 255, 255, 0.3);
+                  border-radius: 4px;
+                  text-align: center;
+                  line-height: 32px;
+                "
+              >
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a
+                href="#"
+                class="text-white me-2 d-inline-block"
+                style="
+                  width: 32px;
+                  height: 32px;
+                  border: 1px solid rgba(255, 255, 255, 0.3);
+                  border-radius: 4px;
+                  text-align: center;
+                  line-height: 32px;
+                "
+              >
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a
+                href="#"
+                class="text-white me-2 d-inline-block"
+                style="
+                  width: 32px;
+                  height: 32px;
+                  border: 1px solid rgba(255, 255, 255, 0.3);
+                  border-radius: 4px;
+                  text-align: center;
+                  line-height: 32px;
+                "
+              >
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a
+                href="#"
+                class="text-white me-2 d-inline-block"
+                style="
+                  width: 32px;
+                  height: 32px;
+                  border: 1px solid rgba(255, 255, 255, 0.3);
+                  border-radius: 4px;
+                  text-align: center;
+                  line-height: 32px;
+                "
+              >
+                <i class="fab fa-vimeo-v"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="pt-4 text-center"
+          style="border-top: 1px solid rgba(255, 255, 255, 0.1)"
+        >
+          <p class="mb-0">2024 © MMK Group. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

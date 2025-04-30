@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MMK Consultants - About Us</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <style>
+        /* Custom styles */
+        .top-bar {
+            background-color: #212121;
+            color: white;
+            padding: 8px 0;
+            font-size: 14px;
+        }
+        .top-bar a {
+            color: white;
+            text-decoration: none;
+        }
+        .social-icons a {
+            margin-left: 15px;
+            color: white;
+        }
+        .navbar {
+            padding: 15px 0;
+        }
+        .navbar-nav .nav-link {
+            color: #212121;
+            margin: 0 10px;
+            font-weight: 500;
+        }
+        .navbar-brand img {
+            width: 200px;
+        }
+        .btn-quote {
+            background-color: #212121;
+            color: white;
+            border-radius: 4px;
+            padding: 8px 20px;
+        }
+        .hero-heading {
+            font-size: 52px;
+            font-weight: bold;
+        }
+        .timeline-year {
+            font-size: 48px;
+            color: #f0f0f0;
+            font-weight: bold;
+        }
+        .timeline-title {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        
+        .nav-link.active {
+            font-weight: 700;
+            color: #000 !important;
+        }
+       
+    </style>
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="contact-info">
+                <span class="me-3"><i class="fas fa-phone-alt me-2"></i>+88 012 345 678 90</span>
+                <span class="me-3"><i class="far fa-envelope me-2"></i>info@example.com</span>
+                <span><i class="far fa-clock me-2"></i>Mon - Fri: 09 AM - 09 PM</span>
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Menu -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/about/aboutL_logo.png" alt="MMK Consultants Logo" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarNav">
+                <ul class="navbar-nav mx-auto bg-light">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                            Our Services
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Service 1</a></li>
+                            <li><a class="dropdown-item" href="#">Service 2</a></li>
+                            <li><a class="dropdown-item" href="#">Service 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Documents & Forms</a>
+                    </li>
+                </ul>
+                <a href="#" class="btn btn-quote">Get a Quote</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="about-hero py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <span class="badge border text-dark px-3 py-2 rounded-pill mb-3">Our Story</span>
+                    <h2 class="text-secondary mb-3">The Story of MMK Group</h2>
+                    <h1 class="hero-heading mb-4">A Vision Transformed into a Global Empire</h1>
+                    <a href="#timeline" class="btn btn-dark rounded-pill px-4 py-2 d-inline-flex align-items-center">
+                        View Timeline <i class="fas fa-arrow-down ms-2"></i>
+                    </a>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-hero-text p-4">
+                        <p class="pt-4 small">
+                            The journey of MMK Group is not just about business; it's about passion, perseverance, and purpose. Founded by Mr. Mohd Mehrab Musa in 2008, MMK Group has evolved from a small entrepreneurial venture into a global conglomerate, driven by a singular vision: to build sustainable, impactful businesses that make a difference. From humble beginnings, MMK Group has grown by embracing innovation, challenging the status quo, and striving for excellence across multiple industries. Today, MMK Group stands as a testament to what can be achieved when vision meets determination.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Image Section -->
+    <section class="team-image py-5">
+        <div class="container">
+            <img src="images/about/about_group.png" alt="MMK Team Meeting" class="img-fluid rounded-4 w-100" style="height: 400px; object-fit: cover;">
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="timeline-section py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="badge border bg-light text-dark px-3 py-2 rounded-pill mb-3">Timeline</span>
+                <h2 class="display-5 fw-bold mb-4">A Timeline of Vision and Growth. The Story of Growth and Excellence</h2>
+            </div>
+
+            <div class="timeline-content">
+                <div class="row mb-5 timeline-item">
+                    <div class="col-md-3">
+                        <div class="timeline-year">2008</div>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="timeline-title">The Foundation of a Dream</div>
+                        <p class="mb-0">
+                            <strong>Sakura Ultra Flow</strong> was born with a mission to tackle the growing water management challenges in Bangladesh. Founded by Mr. Mohd Mehrab Musa, the company quickly became a trusted name in water treatment, working closely with government bodies, the Bangladesh Army, and the Chittagong City Corporation. What began as a solution to a pressing local issue set the stage for the expansive journey ahead.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row mb-5 timeline-item">
+                    <div class="col-md-3">
+                        <div class="timeline-year">2010</div>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="timeline-title">Shaping the Future of Agriculture</div>
+                        <p class="mb-0">
+                            The launch of <strong>MMK Agro Management</strong> was a pivotal moment in the Group's history. Responding to the increasing demand for high-quality agricultural products, MMK Agro set out to revolutionize the global agricultural trade landscape. By building a vast network of suppliers and producers, the company became a key player in the international market, bringing essential commodities like fruits, vegetables, and grains to countries worldwide.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row mb-5 timeline-item">
+                    <div class="col-md-3">
+                        <div class="timeline-year">2013</div>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="timeline-title">Weaving a New Future in Textiles</div>
+                        <p class="mb-0">
+                            As Bangladesh's garment industry began to rise, <strong>Surma Tex</strong> was founded in 2013, bringing expertise to the ready-made garment (RMG) sector. Surma Tex was not just another textile company—it was a vision for creating a hub of high-quality sourcing solutions. This division focused on producing knitwear and woven products, building strong relationships with buyers, and ensuring the highest standards of quality. Surma Tex became synonymous with exceptional craftsmanship and global trust.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row mb-5 timeline-item">
+                    <div class="col-md-3">
+                        <div class="timeline-year">2015</div>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="timeline-title">Taking Trade Global</div>
+                        <p class="mb-0">
+                            In 2015, MMK Trading was launched, marking the company's ambitious step into international trading. Initially focused on fresh fruits, vegetables, and seafood, MMK Trading expanded its footprint, creating a seamless trade network that spanned multiple countries and a wide variety of products. This marked a pivotal shift as MMK Group's reach extended beyond borders, laying the foundation for further diversification.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row mb-5 timeline-item">
+                    <div class="col-md-3">
+                        <div class="timeline-year">2020</div>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="timeline-title">A Year of Bold Expansion</div>
+                        <p class="mb-4">
+                            When the world was faced with an unprecedented crisis, MMK Health Services rose to the challenge, providing medical technology and equipment during the COVID-19 pandemic. It was a moment that defined the group's resilience and commitment to society's well-being.
+                        </p>
+                        <p class="mb-3">
+                            At the same time, MMK Group made a series of strategic moves that would shape its future. MMK Construction was established to meet the growing demand for large-scale infrastructure projects, offering end-to-end solutions with a focus on sustainability and quality.
+                        </p>
+                        <ul class="list-unstyled">
+                            <li class="mb-3">• <strong>MMK Consultants</strong> was launched to help businesses across industries grow, enhance their brands, and optimize their operations.</li>
+                            <li class="mb-3">• <strong>MMK Investments</strong> brought new opportunities to the table, focusing on cross-border mergers, acquisitions, and investments in renewable energy, particularly solar power plants.</li>
+                            <li>• <strong>MMK Motivates</strong> was founded to guide aspiring entrepreneurs, provide executive coaching, and optimize productivity.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row mb-5 timeline-item">
+                    <div class="col-md-3">
+                        <div class="timeline-year">2021</div>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="timeline-title">Growth and Global Leadership</div>
+                        <p class="mb-0">
+                            <strong>MMK Investments</strong> strengthened its role as a key player in the world of venture capital, helping early-stage companies grow and supporting cross-border mergers and acquisitions. With a focus on sustainability and innovation, MMK Group's investments continued to flourish.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row mb-5 timeline-item">
+                    <div class="col-md-3">
+                        <div class="timeline-year">2022</div>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="timeline-title">Leadership in Innovation</div>
+                        <p class="mb-0">
+                            <strong>MMK Motivates</strong> grew into a leading platform for entrepreneurship coaching, offering business owners the tools to create sustainable growth. The group also expanded into new markets and invested in cutting-edge technologies, solidifying its reputation as an innovator and thought leader.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row timeline-item">
+                    <div class="col-md-3">
+                        <div class="timeline-year">2023 and Beyond</div>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="timeline-title">A Vision for the Future</div>
+                        <p class="mb-0">
+                            MMK Group's vision is as strong as ever: to continue its journey of global expansion, focusing on technological advancements, sustainability, and making a positive impact. As we look to the future, MMK Group is committed to upholding the values of responsibility, integrity, and community, and we're excited about the opportunities that lie ahead.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Journey at a Glance Section -->
+    <section class="journey-glance py-5 bg-light">
+        <div class="container">
+            <h2 class="display-5 fw-bold mb-5">MMK Group's Journey at a Glance</h2>
+            
+            <div class="journey-timeline">
+                <div class="row mb-4 align-items-center">
+                    <div class="col-md-2">
+                        <h5 class="fw-bold mb-0">2008</h3>
+                    </div>
+                    <div class="col-md-3">
+                        <hr class="border-secondary opacity-50">
+                    </div>
+                    <div class="col-md-7 text-end"
+                        <p class="mb-0  ">Sakura Ultra Flow founded, solving water treatment challenges in Bangladesh.</p>
+                    </div>
+                </div>
+
+                <div class="row mb-4 align-items-center">
+                    <div class="col-md-2">
+                        <h5 class="fw-bold mb-0">2010</h3>
+                    </div>
+                    <div class="col-md-3">
+                        <hr class="border-secondary opacity-50">
+                    </div>
+                    <div class="col-md-7 text-end">
+                        <p class="mb-0">MMK Agro Management established, revolutionizing agricultural trade.</p>
+                    </div>
+                </div>
+
+                <div class="row mb-4 align-items-center">
+                    <div class="col-md-2">
+                        <h5 class="fw-bold mb-0">2013</h3>
+                    </div>
+                    <div class="col-md-3">
+                        <hr class="border-secondary opacity-50">
+                    </div>
+                    <div class="col-md-7 text-end">
+                        <p class="mb-0">Surma Tex launched, contributing to Bangladesh's booming garment sector.</p>
+                    </div>
+                </div>
+
+                <div class="row mb-4 align-items-center">
+                    <div class="col-md-2">
+                        <h5 class="fw-bold mb-0">2015</h3>
+                    </div>
+                    <div class="col-md-3">
+                        <hr class="border-secondary opacity-50">
+                    </div>
+                    <div class="col-md-7 text-end">
+                        <p class="mb-0">MMK Trading founded, expanding the Group's international reach in seafood trade.</p>
+                    </div>
+                </div>
+
+                <div class="row mb-4 align-items-center">
+                    <div class="col-md-2">
+                        <h5 class="fw-bold mb-0">2020</h3>
+                    </div>
+                    <div class="col-md-3">
+                        <hr class="border-secondary opacity-50">
+                    </div>
+                    <div class="col-md-7 text-end">
+                        <p class="mb-0">MMK Health Services supported the COVID-19 pandemic with medical solutions.</p>
+                    </div>
+                </div>
+
+                <div class="row mb-4 align-items-center">
+                    <div class="col-md-2">
+                        <h5 class="fw-bold mb-0">2020</h3>
+                    </div>
+                    <div class="col-md-3">
+                        <hr class="border-secondary opacity-50">
+                    </div>
+                    <div class="col-md-7 text-end">
+                        <p class="mb-0">MMK Construction launched, offering end-to-end construction solutions.</p>
+                    </div>
+                </div>
+
+                <div class="row mb-4 align-items-center">
+                    <div class="col-md-2">
+                        <h5 class="fw-bold mb-0">2020</h3>
+                    </div>
+                    <div class="col-md-3">
+                        <hr class="border-secondary opacity-50">
+                    </div>
+                    <div class="col-md-7 text-end">
+                        <p class="mb-0">MMK Consultants formed to assist in business development and growth strategies.</p>
+                    </div>
+                </div>
+
+                <div class="row mb-4 align-items-center">
+                    <div class="col-md-2">
+                        <h5 class="fw-bold mb-0">2021</h3>
+                    </div>
+                    <div class="col-md-3">
+                        <hr class="border-secondary opacity-50">
+                    </div>
+                    <div class="col-md-7 text-end">
+                        <p class="mb-0">MMK Investments expanded, supporting venture capital and sustainable investments.</p>
+                    </div>
+                </div>
+
+                <div class="row mb-4 align-items-center">
+                    <div class="col-md-2">
+                        <h5 class="fw-bold mb-0">2022</h3>
+                    </div>
+                    <div class="col-md-3">
+                        <hr class="border-secondary opacity-50">
+                    </div>
+                    <div class="col-md-7 text-end">
+                        <p class="mb-0">MMK Motivates became a leader in executive coaching and entrepreneurship.</p>
+                    </div>
+                </div>
+
+                <div class="row align-items-center">
+                    <div class="col-md-2">
+                        <h5 class="fw-bold mb-0">2023 and Beyond</h3>
+                    </div>
+                    <div class="col-md-3">
+                        <hr class="border-secondary opacity-50">
+                    </div>
+                    <div class="col-md-7 text-end">
+                        <p class="mb-0">Focused on expanding into new markets, driving innovation, and sustainability.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Let's Work Together Section -->
+    <section style="margin-bottom:-100px" class="work-together-section py-5 mt-n5 pt-0 pb-0">
+        <div class="container py-5">
+            <div class="row bg-light rounded-4 shadow-sm p-4 position-relative overflow-hidden">
+                <div class="col-lg-7 py-4">
+                    <span style="background-color: #ffffff" class="badge border text-dark px-3 py-2 rounded-pill mb-3">Let's Work Together</span>
+                    <h2 class="display-5 fw-bold mb-4">Partner with Us to Simplify Your Trading Journey</h2>
+                    <p class="lead mb-4">
+                        We simplify complex trading processes, deliver high-quality products,
+                        and cater to diverse industry needs with precision and reliability.
+                    </p>
+                    <a href="#" class="btn btn-dark rounded-pill px-4 py-2">
+                        Contact Us <i class="fas fa-arrow-right ms-2"></i>
+                    </a>
+                </div>
+                <div class="col-lg-5 d-none d-lg-flex align-items-center justify-content-end">
+                    <img src="images/testimonial/Vectors.png" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container pt-5">
+            <div class="row mb-5">
+                <div class="col-lg-3 mb-4 mb-lg-0">
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="me-2">
+                            <img src="images/footer/IMG_1815 1.png" alt="">
+                        </div>
+                        <div class="logo-text text-white">
+                            <span class="fw-bold fs-4">MMK</span> Consultants
+                        </div>
+                    </div>
+                    <p class="mb-4">Opening Doors to Global Trade.</p>
+                    
+                    <div class="newsletter-form mb-4">
+                        <div class="input-group">
+                            <input type="email" class="form-control bg-transparent text-white" placeholder="Email" aria-label="Email" style="border-color: rgba(255,255,255,0.3); border-radius: 4px;color: white">
+                            <button class="btn ms-2" type="button" style="border-color: rgba(255,255,255,0.3); background-color: transparent; color: white; border-radius: 0 4px 4px 0;">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <h5 class="fw-bold mb-3">Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">About us</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Properties</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Property Details</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <h5 class="fw-bold mb-3">Information</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Contact us</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Privacy Policy</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">FAQ</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">404</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 mt-4 mt-lg-0">
+                    <h5 class="fw-bold mb-3">Contact</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">+14379816442</li>
+                        <li class="mb-2">procurement@mmkconsultants.ca</li>
+                    </ul>
+                    <div class="social-links mt-3">
+                        <a href="#" class="text-white me-2 d-inline-block" style="width: 32px; height: 32px; border: 1px solid rgba(255,255,255,0.3); border-radius: 4px; text-align: center; line-height: 32px;">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-white me-2 d-inline-block" style="width: 32px; height: 32px; border: 1px solid rgba(255,255,255,0.3); border-radius: 4px; text-align: center; line-height: 32px;">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-white me-2 d-inline-block" style="width: 32px; height: 32px; border: 1px solid rgba(255,255,255,0.3); border-radius: 4px; text-align: center; line-height: 32px;">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="text-white me-2 d-inline-block" style="width: 32px; height: 32px; border: 1px solid rgba(255,255,255,0.3); border-radius: 4px; text-align: center; line-height: 32px;">
+                            <i class="fab fa-vimeo-v"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-4 text-center" style="border-top: 1px solid rgba(255,255,255,0.1);">
+                <p class="mb-0">2024 © MMK Group. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 

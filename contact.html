@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MMK Consultants - Contact Us</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <style>
+        /* Custom styles */
+        .top-bar {
+            background-color: #212121;
+            color: white;
+            padding: 8px 0;
+            font-size: 14px;
+        }
+        .top-bar a {
+            color: white;
+            text-decoration: none;
+        }
+        .social-icons a {
+            margin-left: 15px;
+            color: white;
+        }
+        .navbar {
+            padding: 15px 0;
+        }
+        .navbar-nav .nav-link {
+            color: #212121;
+            margin: 0 10px;
+            font-weight: 500;
+        }
+        .navbar-brand img {
+            width: 200px;
+        }
+        .btn-quote {
+            background-color: #212121;
+            color: white;
+            border-radius: 4px;
+            padding: 8px 20px;
+        }
+        .hero-heading {
+            font-size: 52px;
+            font-weight: bold;
+        }
+        .nav-link.active {
+            font-weight: 700;
+            color: #000 !important;
+        }
+        /* Contact form styles */
+        .form-control {
+            padding: 12px;
+            border: 1px solid #dee2e6;
+            border-radius: 4px;
+        }
+        .form-control:focus {
+            box-shadow: none;
+            border-color: #212121;
+        }
+        .contact-icon {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+        }
+        .contact-methods .card {
+            transition: all 0.3s ease;
+        }
+        .contact-methods .card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="contact-info">
+                <span class="me-3"><i class="fas fa-phone-alt me-2"></i>+88 012 345 678 90</span>
+                <span class="me-3"><i class="far fa-envelope me-2"></i>info@example.com</span>
+                <span><i class="far fa-clock me-2"></i>Mon - Fri: 09 AM - 09 PM</span>
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Menu -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/about/aboutL_logo.png" alt="MMK Consultants Logo" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarNav">
+                <ul class="navbar-nav mx-auto bg-light">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                            Our Services
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Service 1</a></li>
+                            <li><a class="dropdown-item" href="#">Service 2</a></li>
+                            <li><a class="dropdown-item" href="#">Service 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Documents & Forms</a>
+                    </li>
+                </ul>
+                <a href="#" class="btn btn-quote">Get a Quote</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Header -->
+    <section class="pb-0">
+        <div class="container text-center py-4">
+            <h6 style="background-color: #ffffff;" class="text-secondary mb-2 p-1 rounded-3  d-inline-block border">Contact Us</h6>
+            <h1 class="display-4 fw-bold mb-4">Get in Touch with Us</h1>
+            <p class="lead mb-5 mx-auto" style="max-width: 600px;">
+                We're here to assist you with any inquiries, provide detailed information about our services, and help you find 
+                the right solutions for your needs. Reach out to us today!
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Contact Form -->
+                <div class="col-lg-8 pe-lg-5">
+                    <div class="row g-3 mb-4">
+                        <div class="col-md-6">
+                            <label for="firstName" class="form-label">First Name</label>
+                            <input type="text" class="form-control" id="firstName" placeholder="John" value="John">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="lastName" class="form-label">Last Name</label>
+                            <input type="text" class="form-control" id="lastName" placeholder="Wick" value="Wick">
+                        </div>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="email" placeholder="you@company.com" value="you@company.com">
+                    </div>
+                    
+                    <div class="mb-4">
+                        <label for="phone" class="form-label">Phone Number</label>
+                        <div class="input-group">
+                            <span class="input-group-text" id="phone-addon">
+                                <img src="https://flagcdn.com/w20/us.png" alt="US" width="20" class="me-1">
+                                +1
+                            </span>
+                            <input type="tel" class="form-control" id="phone" placeholder="1234567890" value="12345678" aria-describedby="phone-addon">
+                        </div>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <label for="company" class="form-label">Company Name</label>
+                        <input type="text" class="form-control" id="company" placeholder="Enter company name...">
+                    </div>
+                    
+                    <div class="mb-4">
+                        <label for="interest" class="form-label">Interested in</label>
+                        <select class="form-select" id="interest">
+                            <option selected>Import & Export Consultancy</option>
+                            <option>Business Development</option>
+                            <option>Marketing & Branding</option>
+                            <option>Financial Advisory</option>
+                        </select>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <label for="source" class="form-label">How Did You Hear About Us?</label>
+                        <select class="form-select" id="source">
+                            <option selected>Select a partner...</option>
+                            <option>Google Search</option>
+                            <option>Social Media</option>
+                            <option>Referral</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" rows="6" placeholder="Leave us a message..."></textarea>
+                    </div>
+                    
+                    <div class="d-flex justify-content-between">
+                        <button type="button" class="btn btn-light px-4 py-2">Clear Form</button>
+                        <button type="submit" class="btn btn-dark px-4 py-2">Send Message</button>
+                    </div>
+                </div>
+                
+                <!-- Contact Methods -->
+                <div class="col-lg-4 mt-5 mt-lg-0">
+                    <div class="contact-methods">
+                        <h4 class="mb-4">Chat with us</h4>
+                        <p class="text-muted mb-4">Speak to our friendly team via live chat.</p>
+                        
+                        <a href="#" class="d-flex align-items-center text-decoration-none text-dark mb-4">
+                            <i class="far fa-comment-dots fs-5 me-2"></i>
+                            <span>Start live chat</span>
+                        </a>
+                        
+                        <a href="#" class="d-flex align-items-center text-decoration-none text-dark mb-5">
+                            <i class="far fa-envelope fs-5 me-2"></i>
+                            <span>Shoot us an email</span>
+                        </a>
+                        
+                        <a href="#" class="d-flex align-items-center text-decoration-none text-dark mb-5">
+                            <i class="fab fa-whatsapp fs-5 me-2"></i>
+                            <span>Message us on Whatsapp</span>
+                        </a>
+                        
+                        <h4 class="mb-3">Call us</h4>
+                        <p class="text-muted mb-3">Call our team Mon-Fri 8:00am to 10pm.</p>
+                        
+                        <a href="tel:+14379816442" class="d-flex align-items-center text-decoration-none text-dark mb-5">
+                            <i class="fas fa-phone-alt fs-5 me-2"></i>
+                            <span>+14379816442</span>
+                        </a>
+                        
+                        <h4 class="mb-3">Visit us</h4>
+                        <p class="text-muted mb-3">Communicate to us in person at our Toronto HQ</p>
+                        
+                        <a href="#" class="d-flex align-items-center text-decoration-none text-dark">
+                            <i class="fas fa-map-marker-alt fs-5 me-2"></i>
+                            <span>Glen Shields Avenue, Concord, ON, Toronto, Canada</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Let's Work Together Section -->
+    <section style="margin-bottom:-100px" class="work-together-section py-5 mt-n5 pt-0 pb-0">
+        <div class="container py-5">
+            <div class="row bg-light rounded-4 shadow-sm p-4 position-relative overflow-hidden">
+                <div class="col-lg-7 py-4">
+                    <span style="background-color: #ffffff" class="badge border text-dark px-3 py-2 rounded-pill mb-3">Let's Work Together</span>
+                    <h2 class="display-5 fw-bold mb-4">Partner with Us to Simplify Your Trading Journey</h2>
+                    <p class="lead mb-4">
+                        We simplify complex trading processes, deliver high-quality products,
+                        and cater to diverse industry needs with precision and reliability.
+                    </p>
+                    <a href="#" class="btn btn-dark rounded-pill px-4 py-2">
+                        Contact Us <i class="fas fa-arrow-right ms-2"></i>
+                    </a>
+                </div>
+                <div class="col-lg-5 d-none d-lg-flex align-items-center justify-content-end">
+                    <img src="images/testimonial/Vectors.png" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container pt-5">
+            <div class="row mb-5">
+                <div class="col-lg-3 mb-4 mb-lg-0">
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="me-2">
+                            <img src="images/footer/IMG_1815 1.png" alt="">
+                        </div>
+                        <div class="logo-text text-white">
+                            <span class="fw-bold fs-4">MMK</span> Consultants
+                        </div>
+                    </div>
+                    <p class="mb-4">Opening Doors to Global Trade.</p>
+                    
+                    <div class="newsletter-form mb-4">
+                        <div class="input-group">
+                            <input type="email" class="form-control bg-transparent text-white" placeholder="Email" aria-label="Email" style="border-color: rgba(255,255,255,0.3); border-radius: 4px;color: white">
+                            <button class="btn ms-2" type="button" style="border-color: rgba(255,255,255,0.3); background-color: transparent; color: white; border-radius: 0 4px 4px 0;">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <h5 class="fw-bold mb-3">Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">About us</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Properties</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Property Details</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <h5 class="fw-bold mb-3">Information</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Contact us</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Privacy Policy</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">FAQ</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">404</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 mt-4 mt-lg-0">
+                    <h5 class="fw-bold mb-3">Contact</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">+14379816442</li>
+                        <li class="mb-2">procurement@mmkconsultants.ca</li>
+                    </ul>
+                    <div class="social-links mt-3">
+                        <a href="#" class="text-white me-2 d-inline-block" style="width: 32px; height: 32px; border: 1px solid rgba(255,255,255,0.3); border-radius: 4px; text-align: center; line-height: 32px;">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-white me-2 d-inline-block" style="width: 32px; height: 32px; border: 1px solid rgba(255,255,255,0.3); border-radius: 4px; text-align: center; line-height: 32px;">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-white me-2 d-inline-block" style="width: 32px; height: 32px; border: 1px solid rgba(255,255,255,0.3); border-radius: 4px; text-align: center; line-height: 32px;">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="text-white me-2 d-inline-block" style="width: 32px; height: 32px; border: 1px solid rgba(255,255,255,0.3); border-radius: 4px; text-align: center; line-height: 32px;">
+                            <i class="fab fa-vimeo-v"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-4 text-center" style="border-top: 1px solid rgba(255,255,255,0.1);">
+                <p class="mb-0">2024 © MMK Group. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 

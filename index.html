@@ -1,0 +1,1345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Insure - Insurance HTML Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Poppins:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icon Font Stylesheet -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+    <style>
+      /* Custom styles */
+      .top-bar {
+        background-color: #212121;
+        color: white;
+        padding: 8px 0;
+        font-size: 14px;
+      }
+
+      .top-bar a {
+        color: white;
+        text-decoration: none;
+      }
+
+      .social-icons a {
+        margin-left: 15px;
+        color: white;
+      }
+
+      .navbar {
+        padding: 15px 0;
+      }
+
+      .navbar-nav .nav-link {
+        color: #212121;
+        margin: 0 10px;
+        font-weight: 500;
+      }
+
+      .navbar-brand img {
+        width: 200px;
+      }
+
+      .btn-quote {
+        background-color: #212121;
+        color: white;
+        border-radius: 4px;
+        padding: 8px 20px;
+      }
+
+      .hero-section {
+        padding: 60px 0;
+      }
+
+      .mmk-logo {
+        width: 220px;
+        height: 220px;
+      }
+
+      .hero-heading {
+        font-size: 52px;
+        font-weight: bold;
+        margin-top: 20px;
+      }
+
+      .hero-text {
+        color: #555;
+        line-height: 1.6;
+        margin: 20px 0 30px;
+      
+      }
+
+      .btn-dark-custom {
+        background-color: #212121;
+        color: white;
+        padding: 10px 25px;
+        border-radius: 30px;
+        border: none;
+      }
+
+      .btn-light-custom {
+        background-color: transparent;
+        color: #212121;
+        padding: 10px 25px;
+        border-radius: 30px;
+        border: 1px solid #ddd;
+        margin-left: 15px;
+      }
+
+      .carousel-indicators {
+        position: relative;
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
+
+      .carousel-indicators button {
+        width: 25px !important;
+        height: 5px !important;
+        background-color: #aaa !important;
+        border-radius: 0 !important;
+      }
+
+      .carousel-indicators .active {
+        background-color: #212121 !important;
+      }
+
+      /* Product Carousel Specific Styles */
+      .products-section {
+        overflow: hidden;
+        width: 100%;
+        padding: 30px 0;
+      }
+
+      .product-carousel {
+        width: 100vw;
+        position: relative;
+        left: 50%;
+        right: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw;
+        cursor: grab;
+      }
+
+      .product-carousel:active {
+        cursor: grabbing;
+      }
+
+      .product-card {
+        background-color: #f8f8f8;
+        border-radius: 10px;
+        overflow: hidden;
+        height: 180px;
+        display: flex;
+        margin: 0px 12px;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.3s ease;
+      }
+
+      .product-card:hover {
+        transform: translateY(-5px);
+      }
+
+      .product-card img {
+        max-width: 100%;
+        max-height: 140px;
+        object-fit: contain;
+      }
+
+      .carousel-control-prev,
+      .carousel-control-next {
+        width: 5%;
+      }
+
+      .carousel-control-prev-icon,
+      .carousel-control-next-icon {
+        background-color: #212121;
+        padding: 20px;
+        border-radius: 50%;
+      }
+
+      .product-carousel .carousel-item {
+        transition: transform 1s ease-in-out;
+      }
+
+      .product-carousel .carousel-item-next:not(.carousel-item-start),
+      .product-carousel .active.carousel-item-end {
+        transform: translateX(16.6%);
+      }
+      
+      .product-carousel .carousel-item-prev:not(.carousel-item-end),
+      .product-carousel .active.carousel-item-start {
+        transform: translateX(-16.6%);
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Spinner Start -->
+    <div
+      id="spinner"
+      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+    >
+      <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Topbar Start -->
+    <div
+      class="container-fluid bg-dark text-white-50 py-2 px-0 d-none d-lg-block"
+    >
+      <div class="row gx-0 align-items-center">
+        <div class="col-lg-7 px-5 text-start">
+          <div class="h-100 d-inline-flex align-items-center me-4">
+            <small class="fa fa-phone-alt me-2"></small>
+            <small>+012 345 6789</small>
+          </div>
+          <div class="h-100 d-inline-flex align-items-center me-4">
+            <small class="far fa-envelope-open me-2"></small>
+            <small>info@example.com</small>
+          </div>
+          <div class="h-100 d-inline-flex align-items-center me-4">
+            <small class="far fa-clock me-2"></small>
+            <small>Mon - Fri : 09 AM - 09 PM</small>
+          </div>
+        </div>
+        <div class="col-lg-5 px-5 text-end">
+          <div class="h-100 d-inline-flex align-items-center">
+            <a class="text-white-50 ms-4" href=""
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a class="text-white-50 ms-4" href=""
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a class="text-white-50 ms-4" href=""
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a class="text-white-50 ms-4" href=""
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Topbar End -->
+
+    <!-- Navbar Start -->
+    <nav
+      class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5"
+    >
+      <a href="index.html" class="navbar-brand d-flex pe-5 align-items-center">
+        <!-- <h1 class="m-0">
+          <img
+            class="img-fluid me-3"
+            src="img/icon/icon-02-primary.png"
+            alt=""
+          />Insure
+        </h1> -->
+      </a>
+      <button
+        type="button"
+        class="navbar-toggler"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarCollapse"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav mx-auto bg-light rounded pe-4 py-3 py-lg-0">
+          <a href="index.html" class="nav-item nav-link active">Home</a>
+          <a href="about.html" class="nav-item nav-link">About Us</a>
+          <a href="service.html" class="nav-item nav-link">Our Services</a>
+          <div class="nav-item dropdown">
+            <a
+              href="#"
+              class="nav-link dropdown-toggle"
+              data-bs-toggle="dropdown"
+              >Pages</a
+            >
+            <div class="dropdown-menu bg-light border-0 m-0">
+              <a href="feature.html" class="dropdown-item">Features</a>
+              <a href="appointment.html" class="dropdown-item">Appointment</a>
+              <a href="team.html" class="dropdown-item">Team Members</a>
+              <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+              <a href="404.html" class="dropdown-item">404 Page</a>
+            </div>
+          </div>
+          <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+        </div>
+      </div>
+      <a href="" class="btn btn-primary bg-dark px-3 d-none d-lg-block"
+        >Get A Quote</a
+      >
+    </nav>
+    <!-- Navbar End -->
+    <!-- Hero Section Carousel -->
+    <section class="hero-section">
+      <div class="container">
+        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <div class="row align-items-center">
+                <div class="col-lg-6">
+                  <img
+                    src="images/hero/hero_logo.jpg"
+                    alt="MMK Consultants Logo"
+                    class="mmk-logo"
+                  />
+                  <h5 class="hero-heading">MMK Consultants</h5>
+                  <p class="hero-text">
+                    At MMK Consultants, we pride ourselves on delivering
+                    comprehensive solutions in international trade and commerce.
+                    With a strong global presence and expertise spanning
+                    multiple industries, we ensure premium products and services
+                    for our clients worldwide.
+                  </p>
+                  <div class="buttons">
+                    <button class="btn btn-dark-custom">
+                      Explore Our Solutions
+                    </button>
+                    <button class="btn btn-light-custom">Learn More</button>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <img
+                    src="images/hero/hero_right.png"
+                    alt="Professional"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+              <div class="row align-items-center">
+                <div class="col-lg-6">
+                  <img
+                    src="images/hero/hero_logo.jpg"
+                    alt="MMK Consultants Logo"
+                    class="mmk-logo"
+                  />
+                  <h1 class="hero-heading">Global Solutions</h1>
+                  <p class="hero-text">
+                    Our experienced team provides innovative solutions for
+                    businesses around the world. From supply chain management to
+                    trade facilitation, we're your trusted partner for
+                    international commerce.
+                  </p>
+                  <div class="buttons">
+                    <button class="btn btn-dark-custom">Our Services</button>
+                    <button class="btn btn-light-custom">Contact Us</button>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <img
+                    src="images/hero/hero_right.png"
+                    alt="Global Solutions"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+              <div class="row align-items-center">
+                <div class="col-lg-6">
+                  <img
+                    src="images/hero/hero_logo.jpg"
+                    alt="MMK Consultants Logo"
+                    class="mmk-logo"
+                  />
+                  <h1 class="hero-heading">Expert Consultation</h1>
+                  <p class="hero-text">
+                    With decades of combined experience, our consultants provide
+                    expert guidance in navigating complex international markets.
+                    We help businesses expand their global footprint with
+                    confidence.
+                  </p>
+                  <div class="buttons">
+                    <button class="btn btn-dark-custom">Meet Our Team</button>
+                    <button class="btn btn-light-custom">
+                      Success Stories
+                    </button>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <img
+                    src="images/hero/hero_right.png"
+                    alt="Expert Consultation"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#heroCarousel"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#heroCarousel"
+              data-bs-slide-to="1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#heroCarousel"
+              data-bs-slide-to="2"
+            ></button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Products Section Carousel -->
+    <section class="products-section">
+      <div
+        id="productCarousel"
+        class="carousel slide product-carousel"
+        data-bs-ride="carousel"
+        data-bs-interval="2000"
+        data-bs-pause="false"
+        data-bs-wrap="true"
+      >
+        <div class="carousel-inner">
+          <!-- Single Item Sliding Carousel -->
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-md-2 d-none d-md-block">
+                <div class="product-card">
+                  <img
+                    src="images/hero_carousel/pngimg.com - rice_PNG17 1.png"
+                    alt="Rice"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+              <div class="col-md-2 d-none d-md-block">
+                <div class="product-card">
+                  <img
+                    src="images/hero_carousel/image 7.png"
+                    alt="Cement"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+              <div class="col-md-2 d-none d-md-block">
+                <div class="product-card">
+                  <img
+                    src="images/hero_carousel/pngwing.com 1.png"
+                    alt="Product"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+              <div class="col-md-2 d-none d-md-block">
+                <div class="product-card">
+                  <img
+                    src="images/hero_carousel/Lovepik_com-400694308-sugar-cane 1.png"
+                    alt="Sugar Cane"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+              <div class="col-md-2 d-none d-md-block">
+                <div class="product-card">
+                  <img
+                    src="images/hero_carousel/image 6.png"
+                    alt="Product"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+              <div class="col-md-2 d-none d-md-block">
+                <div class="product-card">
+                  <img
+                    src="images/hero_carousel/Photo Frame.png"
+                    alt="Product"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+              <!-- Mobile View - Single Item -->
+              <div class="col-12 d-md-none">
+                <div class="product-card">
+                  <img
+                    src="images/hero_carousel/pngimg.com - rice_PNG17 1.png"
+                    alt="Rice"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-md-2 d-none d-md-block">
+                <div class="product-card">
+                  <img
+                    src="images/hero_carousel/image 7.png"
+                    alt="Cement"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+              <div class="col-md-2 d-none d-md-block">
+                <div class="product-card">
+                  <img
+                    src="images/hero_carousel/pngwing.com 1.png"
+                    alt="Product"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+              <div class="col-md-2 d-none d-md-block">
+                <div class="product-card">
+                  <img
+                    src="images/hero_carousel/Lovepik_com-400694308-sugar-cane 1.png"
+                    alt="Sugar Cane"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+              <div class="col-md-2 d-none d-md-block">
+                <div class="product-card">
+                  <img
+                    src="images/hero_carousel/image 6.png"
+                    alt="Product"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+              <div class="col-md-2 d-none d-md-block">
+                <div class="product-card">
+                  <img
+                    src="images/hero_carousel/Photo Frame.png"
+                    alt="Product"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+              <div class="col-md-2 d-none d-md-block">
+                <div class="product-card">
+                  <img
+                    src="images/hero_carousel/pngimg.com - rice_PNG17 1.png"
+                    alt="Rice"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+              <!-- Mobile View - Single Item -->
+              <div class="col-12 d-md-none">
+                <div class="product-card">
+                  <img
+                    src="images/hero_carousel/image 7.png"
+                    alt="Cement"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-md-2 d-none d-md-block">
+                <div class="product-card">
+                  <img
+                    src="images/hero_carousel/pngwing.com 1.png"
+                    alt="Product"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+              <div class="col-md-2 d-none d-md-block">
+                <div class="product-card">
+                  <img
+                    src="images/hero_carousel/Lovepik_com-400694308-sugar-cane 1.png"
+                    alt="Sugar Cane"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+              <div class="col-md-2 d-none d-md-block">
+                <div class="product-card">
+                  <img
+                    src="images/hero_carousel/image 6.png"
+                    alt="Product"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+              <div class="col-md-2 d-none d-md-block">
+                <div class="product-card">
+                  <img
+                    src="images/hero_carousel/Photo Frame.png"
+                    alt="Product"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+              <div class="col-md-2 d-none d-md-block">
+                <div class="product-card">
+                  <img
+                    src="images/hero_carousel/pngimg.com - rice_PNG17 1.png"
+                    alt="Rice"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+              <div class="col-md-2 d-none d-md-block">
+                <div class="product-card">
+                  <img
+                    src="images/hero_carousel/image 7.png"
+                    alt="Cement"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+              <!-- Mobile View - Single Item -->
+              <div class="col-12 d-md-none">
+                <div class="product-card">
+                  <img
+                    src="images/hero_carousel/pngwing.com 1.png"
+                    alt="Product"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Us Section -->
+    <section class="about-us-section py-5 my-5">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-lg-5">
+            <div class="row mb-4">
+              <div class="col-md-6">
+                <img
+                  src="images/about/about1.png"
+                  alt="Consulting"
+                  class="img-fluid rounded"
+                />
+              </div>
+              <div class="col-md-6">
+                <img
+                  src="images/about/image2.png"
+                  alt="Business"
+                  class="img-fluid rounded"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7 ps-lg-5">
+            <span
+              class="badge bg-light text-dark px-3 py-2 border rounded-pill mb-3"
+              >About Us</span
+            >
+            <h2 class="display-6 fw-bold mb-4">
+              Empowering Global Trade with Innovative Solutions
+            </h2>
+            <p class="lead mb-3">
+              Your Trusted Partner for International Trade, Import-Export
+              Services, and Business Consulting
+            </p>
+            <p class="mb-4">
+              MMK Consultants is a leading provider of international trade and
+              consulting solutions, specializing in import, export, and general
+              trading. Founded with a vision to bridge global markets, we cater
+              to diverse industries such as FMCG, metallurgy, plastics,
+              chemicals, and construction materials. With headquarters in
+              Concord, Ontario, Canada, and strategical offices in the UAE and
+              Bangladesh, we connect buyers and sellers across Asia, Africa, and
+              the Americas. Our commitment to quality, integrity, and excellence
+              has positioned us as a trusted partner in global trade
+            </p>
+            <a href="#" class="btn btn-dark rounded-pill px-4 py-2"
+              >Learn More</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats and Real Estate Section -->
+    <section class="stats-real-estate py-5 bg-light">
+      <div class="container">
+        <div class="row">
+          <!-- Real Estate Section -->
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <h2 class="display-5 fw-bold mb-4">
+              Building dreams into stunning real estate
+            </h2>
+            <p class="lead mb-4">
+              We take pride in our track record of excellence and innovation in
+              the real estate industry. Here's a glimpse of our notable
+              achievements.
+            </p>
+            <a href="#" class="btn btn-dark rounded-pill px-4 py-2">
+              More About Us <i class="fas fa-arrow-right ms-2"></i>
+            </a>
+          </div>
+
+          <!-- Stats Section -->
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-6 mb-4">
+                <div class="bg-white p-4 rounded shadow-sm h-100">
+                  <div class="d-flex align-items-baseline">
+                    <h2 class="display-4 fw-bold counter mb-0" data-count="200">
+                      0
+                    </h2>
+                    <span class="fs-3 fw-bold">+</span>
+                  </div>
+                  <p class="text-muted mt-2 mb-0">Successful<br />Trade</p>
+                </div>
+              </div>
+              <div class="col-6 mb-4">
+                <div class="bg-white p-4 rounded shadow-sm h-100">
+                  <div class="d-flex align-items-baseline">
+                    <h2 class="display-4 fw-bold counter mb-0" data-count="98">
+                      0
+                    </h2>
+                    <span class="fs-3 fw-bold">%</span>
+                  </div>
+                  <p class="text-muted mt-2 mb-0">Client<br />Satisfaction</p>
+                </div>
+              </div>
+              <div class="col-6 mb-4">
+                <div class="bg-white p-4 rounded shadow-sm h-100">
+                  <div class="d-flex align-items-baseline">
+                    <h2 class="display-4 fw-bold counter mb-0" data-count="12">
+                      0
+                    </h2>
+                    <span class="fs-3 fw-bold">+</span>
+                  </div>
+                  <p class="text-muted mt-2 mb-0">Years of<br />Experience</p>
+                </div>
+              </div>
+              <div class="col-6 mb-4">
+                <div class="bg-white p-4 rounded shadow-sm h-100">
+                  <div class="d-flex align-items-baseline">
+                    <h2 class="display-4 fw-bold counter mb-0" data-count="20">
+                      0
+                    </h2>
+                    <span class="fs-3 fw-bold">+</span>
+                  </div>
+                  <p class="text-muted mt-2 mb-0">Award<br />Winning</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Services Section -->
+    <section class="services-section py-5 my-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <span
+            class="badge bg-light text-dark px-3 py-2 border rounded-pill mb-3"
+            >Our Services</span
+          >
+          <h2 class="display-4 fw-bold mb-4 px-lg-5 mx-lg-5">
+            Comprehensive Trade Solutions Tailored to Your Needs
+          </h2>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6 mb-4">
+            <div class="bg-light py-4 pe-2 rounded-4 h-100">
+              <div class="d-flex align-items-center mb-4">
+                <!-- <i class="fas fa-chart-line text-success" style="font-size: 24px;"></i> -->
+                <div
+                  class="service-icon bg-dark p-3 rounded-3 me-3 d-flex align-items-center justify-content-center"
+                  style="width: 60px; height: 60px"
+                >
+                  <img src="images/service/image 3.png" alt="" />
+                </div>
+                <h3 class="h4 fw-bold mb-0">Import and Export Consultancy</h3>
+              </div>
+              <p class="mb-4 ps-4">
+                Simplify your trading processes with our tailored solutions,
+                covering sourcing, negotiations, documentation, and logistics.
+              </p>
+              <a href="#" class="btn btn-dark rounded-pill px-4 ms-4 py-2">
+                Explore Our Services <i class="fas fa-arrow-right ms-2"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mb-4">
+            <div class="bg-light py-4 pe-2 rounded-4 h-100">
+              <div class="d-flex align-items-center mb-4">
+                <div
+                  class="service-icon bg-dark p-3 rounded-3 me-3 d-flex align-items-center justify-content-center"
+                  style="width: 60px; height: 60px"
+                >
+                  <img src="images/service/image 1.png" alt="" />
+                </div>
+                <h3 class="h4 fw-bold mb-0">General Trading</h3>
+              </div>
+              <p class="mb-4 ps-4">
+                Our diverse portfolio ensures we meet the unique needs of
+                clients in multiple industries with high-quality products.
+              </p>
+              <a href="#" class="btn btn-dark rounded-pill ms-4 px-4 py-2">
+                Explore Our Services <i class="fas fa-arrow-right ms-2"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Other Divisions Section -->
+    <section class="other-divisions-section py-5 my-5 position-relative pb-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 position-relative">
+            <h2 class="display-5 fw-bold mb-5">Other Divisions</h2>
+            <img
+              src="images/vision/unsplash_8FNlMbOE1kM.png"
+              alt="Business Meeting"
+              class="img-fluid rounded-4"
+            />
+          </div>
+          <div class="col-lg-6 ps-lg-5 pt-lg-5 mt-4 mt-lg-5">
+            <div class="division-item mb-5">
+              <div class="d-flex">
+                <div class="division-number me-4">
+                  <span class="fw-bold text-body-secondary fs-3">01</span>
+                </div>
+                <div class="w-100">
+                  <h3 class="h3 fw-bold mb-2">SAKURA Ultra Flow</h3>
+                  <p class="mb-0 text-secondary border-bottom pb-3">
+                    Industrial water treatment products specialists.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="division-item mb-5">
+              <div class="d-flex">
+                <div class="division-number me-4">
+                  <span class="fw-bold text-body-secondary fs-3">02</span>
+                </div>
+                <div class="w-100">
+                  <h3 class="h3 fw-bold mb-2">
+                    MMK Construction Management and Supply
+                  </h3>
+                  <p class="mb-0 text-secondary border-bottom pb-3">
+                    Comprehensive construction solutions
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="division-item">
+              <div class="d-flex">
+                <div class="division-number me-4">
+                  <span class="fw-bold text-body-secondary fs-3">03</span>
+                </div>
+                <div>
+                  <h3 class="h3 fw-bold mb-2">MMK Investments</h3>
+                  <p class="mb-0 text-secondary">Strategic wealth management</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="position-absolute" style="top: 0; right: 0; z-index: -1">
+        <img class="pe-5" src="images/vision/Vector.png" alt="" />
+      </div>
+    </section>
+
+    <!-- Our Story Section -->
+    <section class="our-story-section py-5 my-5 bg-light">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 pe-lg-5">
+            <span
+              style="background: #ffffff"
+              class="badge border text-dark px-3 py-2 rounded-pill mb-3"
+              >Our Story</span
+            >
+            <h4 class="text-secondary mb-3">The Story of MMK Group</h4>
+            <h2 class="display-4 fw-bold mb-4">
+              A Vision Transformed into a Global Empire
+            </h2>
+            <p class="mb-4">
+              The journey of MMK Group is not just about business; it's about
+              passion, perseverance, and purpose. Founded by Mr. Mohd Mehrab
+              Musa in 2008, MMK Group has evolved from a small entrepreneurial
+              venture into a global conglomerate, driven by a singular vision:
+              to build sustainable, impactful businesses that make a difference.
+              From humble beginnings, MMK Group has grown by embracing
+              innovation, challenging the status quo, and striving for
+              excellence across multiple industries. Today, MMK Group stands as
+              a testament to what can be achieved when vision meets
+              determination.
+            </p>
+            <a href="#" class="btn btn-dark rounded-pill px-4 py-2">
+              Learn More about Our Story
+            </a>
+          </div>
+          <div class="col-lg-6">
+            <img
+              src="images/story/image 4.png"
+              alt="Business Woman"
+              class="img-fluid rounded-4"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Testimonial Start -->
+    <div class="container-xxl py-5">
+      <div class="container">
+        <div class="text-center mx-auto" style="max-width: 500px">
+          <h1 class="display-6 mb-5">What They Say About Our Insurance</h1>
+        </div>
+        <div class="row g-5">
+          <div class="col-lg-3 d-none d-lg-block">
+            <div class="testimonial-left h-100">
+              <img
+                class="img-fluid animated pulse infinite"
+                src="img/testimonial-1.jpg"
+                alt=""
+              />
+              <img
+                class="img-fluid animated pulse infinite"
+                src="img/testimonial-2.jpg"
+                alt=""
+              />
+              <img
+                class="img-fluid animated pulse infinite"
+                src="img/testimonial-3.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+            <div class="owl-carousel testimonial-carousel">
+              <div class="testimonial-item text-center">
+                <img
+                  class="img-fluid rounded mx-auto mb-4"
+                  src="img/testimonial-1.jpg"
+                  alt=""
+                />
+                <p class="fs-5">
+                  Dolores sed duo clita tempor justo dolor et stet lorem kasd
+                  labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy
+                  et labore et tempor diam tempor erat.
+                </p>
+                <h5>Client Name</h5>
+                <span>Profession</span>
+              </div>
+              <div class="testimonial-item text-center">
+                <img
+                  class="img-fluid rounded mx-auto mb-4"
+                  src="img/testimonial-2.jpg"
+                  alt=""
+                />
+                <p class="fs-5">
+                  Dolores sed duo clita tempor justo dolor et stet lorem kasd
+                  labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy
+                  et labore et tempor diam tempor erat.
+                </p>
+                <h5>Client Name</h5>
+                <span>Profession</span>
+              </div>
+              <div class="testimonial-item text-center">
+                <img
+                  class="img-fluid rounded mx-auto mb-4"
+                  src="img/testimonial-3.jpg"
+                  alt=""
+                />
+                <p class="fs-5">
+                  Dolores sed duo clita tempor justo dolor et stet lorem kasd
+                  labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy
+                  et labore et tempor diam tempor erat.
+                </p>
+                <h5>Client Name</h5>
+                <span>Profession</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 d-none d-lg-block">
+            <div class="testimonial-right h-100">
+              <img
+                class="img-fluid animated pulse infinite"
+                src="img/testimonial-1.jpg"
+                alt=""
+              />
+              <img
+                class="img-fluid animated pulse infinite"
+                src="img/testimonial-2.jpg"
+                alt=""
+              />
+              <img
+                class="img-fluid animated pulse infinite"
+                src="img/testimonial-3.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Testimonial End -->
+
+    <!-- Let's Work Together Section -->
+    <section
+      style="margin-bottom: -100px"
+      class="work-together-section py-5 mt-n5 pt-0 pb-0"
+    >
+      <div class="container py-5">
+        <div
+          style="border-radius: 20px"
+          class="row bg-light shadow-sm p-4 position-relative overflow-hidden"
+        >
+          <div class="col-lg-7 py-4">
+            <span
+              style="background-color: #ffffff"
+              class="badge border text-dark px-3 py-2 rounded-pill mb-3"
+              >Let's Work Together</span
+            >
+            <h4 class="display-6 fw-bold mb-4">
+              Partner with Us to Simplify Your Trading Journey
+            </h4>
+            <p class="lead mb-4">
+              We simplify complex trading processes, deliver high-quality
+              products, and cater to diverse industry needs with precision and
+              reliability.
+            </p>
+            <a href="#" class="btn btn-dark rounded-pill px-4 py-2">
+              Contact Us <i class="fas fa-arrow-right ms-2"></i>
+            </a>
+          </div>
+          <div
+            class="col-lg-5 d-none d-lg-flex align-items-center justify-content-end"
+          >
+            <img
+              src="images/testimonial/Vectors.png"
+              class="img-fluid"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+      <div class="container pt-5">
+        <div class="row mb-5">
+          <div class="col-lg-3 mb-4 mb-lg-0">
+            <div class="d-flex align-items-center mb-3">
+              <div class="me-2">
+                <img src="images/footer/IMG_1815 1.png" alt="" />
+              </div>
+              <div class="logo-text text-white">
+                <span class="fw-bold fs-4">MMK</span> Consultants
+              </div>
+            </div>
+            <p class="mb-4">Opening Doors to Global Trade.</p>
+
+            <div class="newsletter-form mb-4">
+              <div class="input-group">
+                <input
+                  type="email"
+                  class="form-control bg-transparent text-white"
+                  placeholder="Email"
+                  aria-label="Email"
+                  style="
+                    border-color: rgba(255, 255, 255, 0.3);
+                    border-radius: 4px;
+                    color: white;
+                  "
+                />
+                <button
+                  class="btn ms-2"
+                  type="button"
+                  style="
+                    border-color: rgba(255, 255, 255, 0.3);
+                    background-color: transparent;
+                    color: white;
+                    border-radius: 0 4px 4px 0;
+                  "
+                >
+                  Subscribe
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <h5 class="fw-bold mb-3">Links</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="#" class="text-white text-decoration-none">About us</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-white text-decoration-none"
+                  >Properties</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-white text-decoration-none"
+                  >Property Details</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-white text-decoration-none">Blog</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-3">
+            <h5 class="fw-bold mb-3">Information</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="#" class="text-white text-decoration-none"
+                  >Contact us</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-white text-decoration-none"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-white text-decoration-none">FAQ</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-white text-decoration-none">404</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 mt-4 mt-lg-0">
+            <h5 class="fw-bold mb-3">Contact</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">+14379816442</li>
+              <li class="mb-2">procurement@mmkconsultants.ca</li>
+            </ul>
+            <div class="social-links mt-3">
+              <a
+                href="#"
+                class="text-white me-2 d-inline-block"
+                style="
+                  width: 32px;
+                  height: 32px;
+                  border: 1px solid rgba(255, 255, 255, 0.3);
+                  border-radius: 4px;
+                  text-align: center;
+                  line-height: 32px;
+                "
+              >
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a
+                href="#"
+                class="text-white me-2 d-inline-block"
+                style="
+                  width: 32px;
+                  height: 32px;
+                  border: 1px solid rgba(255, 255, 255, 0.3);
+                  border-radius: 4px;
+                  text-align: center;
+                  line-height: 32px;
+                "
+              >
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a
+                href="#"
+                class="text-white me-2 d-inline-block"
+                style="
+                  width: 32px;
+                  height: 32px;
+                  border: 1px solid rgba(255, 255, 255, 0.3);
+                  border-radius: 4px;
+                  text-align: center;
+                  line-height: 32px;
+                "
+              >
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a
+                href="#"
+                class="text-white me-2 d-inline-block"
+                style="
+                  width: 32px;
+                  height: 32px;
+                  border: 1px solid rgba(255, 255, 255, 0.3);
+                  border-radius: 4px;
+                  text-align: center;
+                  line-height: 32px;
+                "
+              >
+                <i class="fab fa-vimeo-v"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="pt-4 text-center"
+          style="border-top: 1px solid rgba(255, 255, 255, 0.1)"
+        >
+          <p class="mb-0">2024 © MMK Group. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-secondary btn-lg-square back-to-top"
+      ><i class="bi bi-arrow-up"></i
+    ></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <!-- Counter Animation Script -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const counters = document.querySelectorAll(".counter");
+        const speed = 200; // The lower the faster
+
+        counters.forEach((counter) => {
+          const updateCount = () => {
+            const target = +counter.getAttribute("data-count");
+            const count = +counter.innerText;
+
+            // Calculate increment
+            const inc = target / speed;
+
+            // Check if target is reached
+            if (count < target) {
+              // Add inc to count and output in counter
+              counter.innerText = Math.ceil(count + inc);
+              // Call function every ms
+              setTimeout(updateCount, 1);
+            } else {
+              counter.innerText = target;
+            }
+          };
+
+          // Run the function
+          updateCount();
+        });
+
+        // Initialize product carousel with continuous autoplay
+        const productCarousel = document.querySelector("#productCarousel");
+        const carousel = new bootstrap.Carousel(productCarousel, {
+          interval: 2000,
+          ride: "carousel",
+          pause: false,
+          wrap: true
+        });
+        
+        // Prevent pause on hover
+        productCarousel.addEventListener('mouseenter', () => {
+          carousel.cycle();
+        });
+        
+        // Smooth transition between slides
+        const carouselItems = document.querySelectorAll('.carousel-item');
+        carouselItems.forEach(item => {
+          item.style.transition = 'transform 1s ease';
+        });
+        
+        // Add mouse drag functionality
+        let isDragging = false;
+        let startPosition = 0;
+        let currentTranslate = 0;
+        
+        productCarousel.addEventListener('mousedown', (e) => {
+          isDragging = true;
+          startPosition = e.clientX;
+          productCarousel.style.cursor = 'grabbing';
+        });
+        
+        productCarousel.addEventListener('mousemove', (e) => {
+          if (!isDragging) return;
+          const currentPosition = e.clientX;
+          currentTranslate = currentPosition - startPosition;
+        });
+        
+        productCarousel.addEventListener('mouseup', (e) => {
+          isDragging = false;
+          productCarousel.style.cursor = 'grab';
+          
+          // Determine direction based on drag distance
+          if (currentTranslate > 50) {
+            // Dragged right - go to previous slide
+            carousel.prev();
+          } else if (currentTranslate < -50) {
+            // Dragged left - go to next slide
+            carousel.next();
+          }
+          
+          // Reset translate
+          currentTranslate = 0;
+        });
+        
+        productCarousel.addEventListener('mouseleave', () => {
+          if (isDragging) {
+            isDragging = false;
+            productCarousel.style.cursor = '';
+          }
+        });
+        
+        // Prevent default drag behavior
+        productCarousel.addEventListener('dragstart', (e) => {
+          e.preventDefault();
+        });
+      });
+    </script>
+  </body>
+</html>
+
