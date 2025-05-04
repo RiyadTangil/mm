@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Poppins:wght@600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Onest:wght@400;500;600;700&"
       rel="stylesheet"
     />
 
@@ -90,6 +90,7 @@
         font-size: 52px;
         font-weight: bold;
         margin-top: 20px;
+     
       }
 
       .hero-text {
@@ -103,11 +104,12 @@
       }
 
       .btn-dark-custom {
-        background-color: #212121;
-        color: white;
+        background-color:#2B2B2B;
+        color: #ffffff;
         padding: 10px 25px;
         border-radius: 30px;
         border: none;
+        font-weight: 500;
       }
 
       .btn-light-custom {
@@ -179,7 +181,6 @@
         object-fit: contain;
       }
 
-     
       .carousel-control-prev,
       .carousel-control-next {
         width: 5%;
@@ -198,12 +199,18 @@
 
       .product-carousel .carousel-item-next:not(.carousel-item-start),
       .product-carousel .active.carousel-item-end {
-        transform: translateX(16.6%);
+        transform: translateX(14.285714%);
       }
 
       .product-carousel .carousel-item-prev:not(.carousel-item-end),
       .product-carousel .active.carousel-item-start {
-        transform: translateX(-16.6%);
+        transform: translateX(-14.285714%);
+      }
+
+      /* Custom 1/7 column for product display */
+      .col-md-1_7 {
+        width: 14.285714%;
+        flex: 0 0 auto;
       }
     </style>
   </head>
@@ -220,36 +227,37 @@
 
     <!-- Topbar Start -->
     <div
-      class="container-fluid bg-dark text-white-50 py-2 px-0 d-none d-lg-block"
+      class="container-fluid bg-dark text-quaternary py-2 px-0 d-none d-lg-block"
     >
       <div class="row gx-0 align-items-center">
         <div class="col-lg-7 px-5 text-start">
           <div class="h-100 d-inline-flex align-items-center me-4">
             <small class="fa fa-phone-alt me-2"></small>
-            <small>+14379816442</small>
+            <small>++88 012 345 678 90</small>
           </div>
           <div class="h-100 d-inline-flex align-items-center me-4">
-            <small class="far fa-envelope-open me-2"></small>
-            <small>procurement@mmkconsultants.ca</small>
+            <img class="me-2" src="images/top/Frame (1).png" alt="" />
+            <small>info@example.com</small>
           </div>
           <div class="h-100 d-inline-flex align-items-center me-4">
-            <small class="far fa-clock me-2"></small>
+            <img class="me-2" src="images/top/Frame.png" alt="" />
+
             <small>Mon - Fri : 09 AM - 09 PM</small>
           </div>
         </div>
         <div class="col-lg-5 px-5 text-end">
           <div class="h-100 d-inline-flex align-items-center">
-            <a class="text-white-50 ms-4" href="#"
-              ><i class="fab fa-facebook-f"></i
+            <a class="text-white-50 ms-2" href="#"
+              >  <img class="me-2" src="images/top/Frame (2).png" alt=""></i
             ></a>
-            <a class="text-white-50 ms-4" href="#"
-              ><i class="fab fa-twitter"></i
+            <a class="text-white-50 ms-2" href="#"
+              >  <img class="me-2" src="images/top/Frame (3).png" alt=""></i
             ></a>
-            <a class="text-white-50 ms-4" href="#"
-              ><i class="fab fa-linkedin-in"></i
+            <a class="text-white-50 ms-2" href="#"
+              >  <img class="me-2" src="images/top/Frame (4).png" alt=""></i
             ></a>
-            <a class="text-white-50 ms-4" href="#"
-              ><i class="fab fa-instagram"></i
+            <a class="text-white-50 ms-2" href="#"
+              >  <img class="me-2" src="images/top/Frame (5).png" alt=""></i
             ></a>
           </div>
         </div>
@@ -261,8 +269,15 @@
     <nav
       class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5"
     >
-      <a href="index.html" class="navbar-brand d-flex pe-5 invisible align-items-center">
-        <img src="images/about/aboutL_logo.png" alt="MMK Consultants Logo" width="200" />
+      <a
+        href="index.html"
+        class="navbar-brand d-flex pe-5  invisible align-items-center"
+      >
+        <img
+          src="images/about/aboutL_logo.png"
+          alt="MMK Consultants Logo"
+          width="200"
+        />
       </a>
       <button
         type="button"
@@ -284,16 +299,26 @@
               >Our Services</a
             >
             <div class="dropdown-menu bg-light border-0 m-0">
-              <a href="general-trading.html" class="dropdown-item">General Trading</a>
-              <a href="import-export.html" class="dropdown-item">Import & Export</a>
-              <a href="fmgc-service.html" class="dropdown-item">FMCG Services</a>
+              <a href="general-trading.html" class="dropdown-item"
+                >General Trading</a
+              >
+              <a href="import-export.html" class="dropdown-item"
+                >Import & Export</a
+              >
+              <a href="fmgc-service.html" class="dropdown-item"
+                >FMCG Services</a
+              >
             </div>
           </div>
           <a href="contact.html" class="nav-item nav-link">Contact Us</a>
-          <a href="documents.html" class="nav-item nav-link">Documents & Forms</a>
+          <a href="documents.html" class="nav-item nav-link"
+            >Documents & Forms</a
+          >
         </div>
       </div>
-      <a href="contact.html" class="btn btn-primary bg-dark px-3 d-none d-lg-block"
+      <a
+        href="contact.html"
+        class="btn btn-primary  px-3 d-none  d-lg-block"
         >Get A Quote</a
       >
     </nav>
@@ -306,14 +331,16 @@
             <!-- Slide 1 -->
             <div class="carousel-item active">
               <div class="row align-items-center">
-                <div class="col-lg-6">
-                  <img
+                <div class="col-lg-7">
+                  <div class="d-flex justify-content-md-start justify-content-center w-100">
+                    <img
                     src="images/hero/hero_logo.jpg"
                     alt="MMK Consultants Logo"
-                    class="mmk-logo"
+                    class="mmk-logo d-"
                   />
-                  <h5 class="hero-heading">MMK Consultants</h5>
-                  <p class="hero-text">
+                  </div>
+                  <h5 class="text-7xl my-4">MMK Consultants</h5>
+                  <p class="text-sm text-tertiary font-normal mb-4">
                     At MMK Consultants, we pride ourselves on delivering
                     comprehensive solutions in international trade and commerce.
                     With a strong global presence and expertise spanning
@@ -327,7 +354,7 @@
                     <button class="btn btn-light-custom">Learn More</button>
                   </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-5">
                   <img
                     src="images/hero/hero_right.png"
                     alt="Professional"
@@ -340,28 +367,31 @@
             <!-- Slide 2 -->
             <div class="carousel-item">
               <div class="row align-items-center">
-                <div class="col-lg-6">
+                <div class="col-lg-7">
                   <img
                     src="images/hero/hero_logo.jpg"
                     alt="MMK Consultants Logo"
                     class="mmk-logo"
                   />
-                  <h1 class="hero-heading">Global Solutions</h1>
-                  <p class="hero-text">
-                    Our experienced team provides innovative solutions for
-                    businesses around the world. From supply chain management to
-                    trade facilitation, we're your trusted partner for
-                    international commerce.
+                  <h5 class="text-7xl my-4">MMK Consultants</h5>
+                  <p class="text-sm text-tertiary font-normal mb-4">
+                    At MMK Consultants, we pride ourselves on delivering
+                    comprehensive solutions in international trade and commerce.
+                    With a strong global presence and expertise spanning
+                    multiple industries, we ensure premium products and services
+                    for our clients worldwide.
                   </p>
                   <div class="buttons">
-                    <button class="btn btn-dark-custom">Our Services</button>
-                    <button class="btn btn-light-custom">Contact Us</button>
+                    <button class="btn btn-dark-custom">
+                      Explore Our Solutions
+                    </button>
+                    <button class="btn btn-light-custom">Learn More</button>
                   </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-5">
                   <img
                     src="images/hero/hero_right.png"
-                    alt="Global Solutions"
+                    alt="Professional"
                     class="img-fluid"
                   />
                 </div>
@@ -371,30 +401,31 @@
             <!-- Slide 3 -->
             <div class="carousel-item">
               <div class="row align-items-center">
-                <div class="col-lg-6">
+                <div class="col-lg-7">
                   <img
                     src="images/hero/hero_logo.jpg"
                     alt="MMK Consultants Logo"
                     class="mmk-logo"
                   />
-                  <h1 class="hero-heading">Expert Consultation</h1>
-                  <p class="hero-text">
-                    With decades of combined experience, our consultants provide
-                    expert guidance in navigating complex international markets.
-                    We help businesses expand their global footprint with
-                    confidence.
+                  <h5 class="text-7xl my-4">MMK Consultants</h5>
+                  <p class="text-sm text-tertiary font-normal mb-4">
+                    At MMK Consultants, we pride ourselves on delivering
+                    comprehensive solutions in international trade and commerce.
+                    With a strong global presence and expertise spanning
+                    multiple industries, we ensure premium products and services
+                    for our clients worldwide.
                   </p>
                   <div class="buttons">
-                    <button class="btn btn-dark-custom">Meet Our Team</button>
-                    <button class="btn btn-light-custom">
-                      Success Stories
+                    <button class="btn btn-dark-custom">
+                      Explore Our Solutions
                     </button>
+                    <button class="btn btn-light-custom">Learn More</button>
                   </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-5">
                   <img
                     src="images/hero/hero_right.png"
-                    alt="Expert Consultation"
+                    alt="Professional"
                     class="img-fluid"
                   />
                 </div>
@@ -438,7 +469,7 @@
           <!-- Single Item Sliding Carousel -->
           <div class="carousel-item active">
             <div class="row">
-              <div class="col-md-2 d-none d-md-block">
+              <div class="col-md-1_7 d-none d-md-block">
                 <div class="product-card">
                   <img
                     src="images/hero_carousel/pngimg.com - rice_PNG17 1.png"
@@ -447,7 +478,7 @@
                   />
                 </div>
               </div>
-              <div class="col-md-2 d-none d-md-block">
+              <div class="col-md-1_7 d-none d-md-block">
                 <div class="product-card">
                   <img
                     src="images/hero_carousel/image 7.png"
@@ -456,7 +487,7 @@
                   />
                 </div>
               </div>
-              <div class="col-md-2 d-none d-md-block">
+              <div class="col-md-1_7 d-none d-md-block">
                 <div class="product-card">
                   <img
                     src="images/hero_carousel/pngwing.com 1.png"
@@ -465,7 +496,7 @@
                   />
                 </div>
               </div>
-              <div class="col-md-2 d-none d-md-block">
+              <div class="col-md-1_7 d-none d-md-block">
                 <div class="product-card">
                   <img
                     src="images/hero_carousel/Lovepik_com-400694308-sugar-cane 1.png"
@@ -474,7 +505,7 @@
                   />
                 </div>
               </div>
-              <div class="col-md-2 d-none d-md-block">
+              <div class="col-md-1_7 d-none d-md-block">
                 <div class="product-card">
                   <img
                     src="images/hero_carousel/image 6.png"
@@ -483,11 +514,20 @@
                   />
                 </div>
               </div>
-              <div class="col-md-2 d-none d-md-block">
+              <div class="col-md-1_7 d-none d-md-block">
                 <div class="product-card">
                   <img
                     src="images/hero_carousel/Photo Frame.png"
                     alt="Product"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+              <div class="col-md-1_7 d-none d-md-block">
+                <div class="product-card">
+                  <img
+                    src="images/hero_carousel/pngimg.com - rice_PNG17 1.png"
+                    alt="Rice"
                     class="img-fluid"
                   />
                 </div>
@@ -507,7 +547,7 @@
 
           <div class="carousel-item">
             <div class="row">
-              <div class="col-md-2 d-none d-md-block">
+              <div class="col-md-1_7 d-none d-md-block">
                 <div class="product-card">
                   <img
                     src="images/hero_carousel/image 7.png"
@@ -516,7 +556,7 @@
                   />
                 </div>
               </div>
-              <div class="col-md-2 d-none d-md-block">
+              <div class="col-md-1_7 d-none d-md-block">
                 <div class="product-card">
                   <img
                     src="images/hero_carousel/pngwing.com 1.png"
@@ -525,7 +565,7 @@
                   />
                 </div>
               </div>
-              <div class="col-md-2 d-none d-md-block">
+              <div class="col-md-1_7 d-none d-md-block">
                 <div class="product-card">
                   <img
                     src="images/hero_carousel/Lovepik_com-400694308-sugar-cane 1.png"
@@ -534,7 +574,7 @@
                   />
                 </div>
               </div>
-              <div class="col-md-2 d-none d-md-block">
+              <div class="col-md-1_7 d-none d-md-block">
                 <div class="product-card">
                   <img
                     src="images/hero_carousel/image 6.png"
@@ -543,7 +583,7 @@
                   />
                 </div>
               </div>
-              <div class="col-md-2 d-none d-md-block">
+              <div class="col-md-1_7 d-none d-md-block">
                 <div class="product-card">
                   <img
                     src="images/hero_carousel/Photo Frame.png"
@@ -552,11 +592,20 @@
                   />
                 </div>
               </div>
-              <div class="col-md-2 d-none d-md-block">
+              <div class="col-md-1_7 d-none d-md-block">
                 <div class="product-card">
                   <img
                     src="images/hero_carousel/pngimg.com - rice_PNG17 1.png"
                     alt="Rice"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+              <div class="col-md-1_7 d-none d-md-block">
+                <div class="product-card">
+                  <img
+                    src="images/hero_carousel/image 7.png"
+                    alt="Cement"
                     class="img-fluid"
                   />
                 </div>
@@ -576,7 +625,7 @@
 
           <div class="carousel-item">
             <div class="row">
-              <div class="col-md-2 d-none d-md-block">
+              <div class="col-md-1_7 d-none d-md-block">
                 <div class="product-card">
                   <img
                     src="images/hero_carousel/pngwing.com 1.png"
@@ -585,7 +634,7 @@
                   />
                 </div>
               </div>
-              <div class="col-md-2 d-none d-md-block">
+              <div class="col-md-1_7 d-none d-md-block">
                 <div class="product-card">
                   <img
                     src="images/hero_carousel/Lovepik_com-400694308-sugar-cane 1.png"
@@ -594,7 +643,7 @@
                   />
                 </div>
               </div>
-              <div class="col-md-2 d-none d-md-block">
+              <div class="col-md-1_7 d-none d-md-block">
                 <div class="product-card">
                   <img
                     src="images/hero_carousel/image 6.png"
@@ -603,7 +652,7 @@
                   />
                 </div>
               </div>
-              <div class="col-md-2 d-none d-md-block">
+              <div class="col-md-1_7 d-none d-md-block">
                 <div class="product-card">
                   <img
                     src="images/hero_carousel/Photo Frame.png"
@@ -612,7 +661,7 @@
                   />
                 </div>
               </div>
-              <div class="col-md-2 d-none d-md-block">
+              <div class="col-md-1_7 d-none d-md-block">
                 <div class="product-card">
                   <img
                     src="images/hero_carousel/pngimg.com - rice_PNG17 1.png"
@@ -621,11 +670,20 @@
                   />
                 </div>
               </div>
-              <div class="col-md-2 d-none d-md-block">
+              <div class="col-md-1_7 d-none d-md-block">
                 <div class="product-card">
                   <img
                     src="images/hero_carousel/image 7.png"
                     alt="Cement"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+              <div class="col-md-1_7 d-none d-md-block">
+                <div class="product-card">
+                  <img
+                    src="images/hero_carousel/pngwing.com 1.png"
+                    alt="Product"
                     class="img-fluid"
                   />
                 </div>
@@ -672,17 +730,17 @@
           </div>
           <div class="col-lg-7 ps-lg-5">
             <span
-              class="badge bg-light text-dark px-3 py-2 border rounded-pill mb-3"
+              class="section-light-title"
               >About Us</span
             >
-            <h2 class="display-6 fw-bold mb-4">
+            <h2 class="text-7xl font-bold text-primary mb-4">
               Empowering Global Trade with Innovative Solutions
             </h2>
-            <p class="lead mb-3">
+            <p class="text-primary font-medium text-lg mb-3">
               Your Trusted Partner for International Trade, Import-Export
               Services, and Business Consulting
             </p>
-            <p class="mb-4">
+            <p class="mb-4  text-base font-light  text-secondary">
               MMK Consultants is a leading provider of international trade and
               consulting solutions, specializing in import, export, and general
               trading. Founded with a vision to bridge global markets, we cater
@@ -693,7 +751,7 @@
               the Americas. Our commitment to quality, integrity, and excellence
               has positioned us as a trusted partner in global trade
             </p>
-            <a href="#" class="btn btn-dark rounded-pill px-4 py-2"
+            <a href="#" class="main-btn"
               >Learn More</a
             >
           </div>
@@ -707,15 +765,15 @@
         <div class="row">
           <!-- Real Estate Section -->
           <div class="col-lg-6 mb-4 mb-lg-0">
-            <h2 class="display-5 fw-bold mb-4">
+            <h2 class="text-7xl fw-bold mb-4 text-primary">
               Building dreams into stunning real estate
             </h2>
-            <p class="lead mb-4">
+            <p class=" text-lg font-normal text-secondary-ctm mb-4">
               We take pride in our track record of excellence and innovation in
               the real estate industry. Here's a glimpse of our notable
               achievements.
             </p>
-            <a href="#" class="btn btn-dark rounded-pill px-4 py-2">
+            <a href="#" class="main-btn">
               More About Us <i class="fas fa-arrow-right ms-2"></i>
             </a>
           </div>
@@ -726,45 +784,45 @@
               <div class="col-6 mb-4">
                 <div class="bg-white p-4 rounded shadow-sm h-100">
                   <div class="d-flex align-items-baseline">
-                    <h2 class="display-4 fw-bold counter mb-0" data-count="200">
+                    <h2 class="display-4 fw-bold text-primary counter mb-0" data-count="200">
                       0
                     </h2>
                     <span class="fs-3 fw-bold">+</span>
                   </div>
-                  <p class="text-muted mt-2 mb-0">Successful<br />Trade</p>
+                  <p class="text-secondary text-xl font-medium mt-2 mb-0">Successful<br />Trade</p>
                 </div>
               </div>
               <div class="col-6 mb-4">
                 <div class="bg-white p-4 rounded shadow-sm h-100">
                   <div class="d-flex align-items-baseline">
-                    <h2 class="display-4 fw-bold counter mb-0" data-count="98">
+                    <h2 class="display-4 fw-bold text-primary counter mb-0" data-count="98">
                       0
                     </h2>
                     <span class="fs-3 fw-bold">%</span>
                   </div>
-                  <p class="text-muted mt-2 mb-0">Client<br />Satisfaction</p>
+                  <p class="text-secondary text-xl font-medium mt-2 mb-0 mt-2 mb-0">Client<br />Satisfaction</p>
                 </div>
               </div>
               <div class="col-6 mb-4">
                 <div class="bg-white p-4 rounded shadow-sm h-100">
                   <div class="d-flex align-items-baseline">
-                    <h2 class="display-4 fw-bold counter mb-0" data-count="12">
+                    <h2 class="display-4 fw-bold text-primary counter mb-0" data-count="12">
                       0
                     </h2>
                     <span class="fs-3 fw-bold">+</span>
                   </div>
-                  <p class="text-muted mt-2 mb-0">Years of<br />Experience</p>
+                  <p class="text-secondary text-xl font-medium mt-2 mb-0 mt-2 mb-0">Years of<br />Experience</p>
                 </div>
               </div>
               <div class="col-6 mb-4">
                 <div class="bg-white p-4 rounded shadow-sm h-100">
                   <div class="d-flex align-items-baseline">
-                    <h2 class="display-4 fw-bold counter mb-0" data-count="20">
+                    <h2 class="display-4 fw-bold text-primary counter mb-0" data-count="20">
                       0
                     </h2>
                     <span class="fs-3 fw-bold">+</span>
                   </div>
-                  <p class="text-muted mt-2 mb-0">Award<br />Winning</p>
+                  <p class="text-secondary text-xl font-medium mt-2 mb-0 mt-2 mb-0">Award<br />Winning</p>
                 </div>
               </div>
             </div>
@@ -777,11 +835,11 @@
       <div class="container">
         <div class="text-center mb-5">
           <span
-            class="badge bg-light text-dark px-3 py-2 border rounded-pill mb-3"
+            class="section-light-title"
             >Our Services</span
           >
-          <h2 class="display-4 fw-bold mb-4 px-lg-5 mx-lg-5">
-            Comprehensive Trade Solutions Tailored to Your Needs
+          <h2 class=" text-7xl font-bold text-primary mb-4 px-lg-5 mx-lg-5">
+            Comprehensive Trade Solutions <br/> Tailored to Your Needs
           </h2>
         </div>
 
@@ -791,18 +849,18 @@
               <div class="d-flex align-items-center mb-4">
                 <!-- <i class="fas fa-chart-line text-success" style="font-size: 24px;"></i> -->
                 <div
-                  class="service-icon bg-dark p-3 rounded-3 me-3 d-flex align-items-center justify-content-center"
-                  style="width: 60px; height: 60px"
+                  class="service-icon bg-dark p-3  me-3 d-flex align-items-center justify-content-center"
+                  style="width: 60px; height: 60px ;border-radius:0px 16px 16px 0px"
                 >
                   <img src="images/service/image 3.png" alt="" />
                 </div>
-                <h3 class="h4 fw-bold mb-0">Import and Export Consultancy</h3>
+                <h3 class=" text-2xl font-bold text-primary mb-0 ">Import and Export Consultancy</h3>
               </div>
-              <p class="mb-4 ps-4">
+              <p class="mb-4 ps-3 text-lg font-medium text-secondary">
                 Simplify your trading processes with our tailored solutions,
                 covering sourcing, negotiations, documentation, and logistics.
               </p>
-              <a href="#" class="btn btn-dark rounded-pill px-4 ms-4 py-2">
+              <a href="#" class="main-btn ms-3">
                 Explore Our Services <i class="fas fa-arrow-right ms-2"></i>
               </a>
             </div>
@@ -812,18 +870,18 @@
             <div class="bg-light py-4 pe-2 rounded-4 h-100">
               <div class="d-flex align-items-center mb-4">
                 <div
-                  class="service-icon bg-dark p-3 rounded-3 me-3 d-flex align-items-center justify-content-center"
-                  style="width: 60px; height: 60px"
+                  class="service-icon bg-dark p-3  me-3 d-flex align-items-center justify-content-center"
+                  style="width: 60px; height: 60px;border-radius:0px 16px 16px 0px"
                 >
                   <img src="images/service/image 1.png" alt="" />
                 </div>
-                <h3 class="h4 fw-bold mb-0">General Trading</h3>
+                <h3 class="text-2xl font-bold text-primary mb-0">General Trading</h3>
               </div>
-              <p class="mb-4 ps-4">
+              <p class="mb-4 ps-3  text-lg font-medium text-secondary">
                 Our diverse portfolio ensures we meet the unique needs of
                 clients in multiple industries with high-quality products.
               </p>
-              <a href="#" class="btn btn-dark rounded-pill ms-4 px-4 py-2">
+              <a href="#" class="main-btn ms-3">
                 Explore Our Services <i class="fas fa-arrow-right ms-2"></i>
               </a>
             </div>
@@ -836,7 +894,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-6 position-relative">
-            <h2 class="display-5 fw-bold mb-5">Other Divisions</h2>
+            <h2 class="section-main-title  mb-5">Other Divisions</h2>
             <img
               src="images/vision/unsplash_8FNlMbOE1kM.png"
               alt="Business Meeting"
@@ -847,11 +905,11 @@
             <div class="division-item mb-5">
               <div class="d-flex">
                 <div class="division-number me-4">
-                  <span class="fw-bold text-body-secondary fs-3">01</span>
+                  <span class="section-sub-title fs-3">01</span>
                 </div>
                 <div class="w-100">
-                  <h3 class="h3 fw-bold mb-2">SAKURA Ultra Flow</h3>
-                  <p class="mb-0 text-secondary-ctm border-bottom pb-3">
+                  <h3 class="section-sub-title mb-2">SAKURA Ultra Flow</h3>
+                  <p class="mb-0 text-secondary font-normal border-bottom pb-3">
                     Industrial water treatment products specialists.
                   </p>
                 </div>
@@ -860,13 +918,13 @@
             <div class="division-item mb-5">
               <div class="d-flex">
                 <div class="division-number me-4">
-                  <span class="fw-bold text-body-secondary fs-3">02</span>
+                  <span class="section-sub-title">02</span>
                 </div>
                 <div class="w-100">
-                  <h3 class="h3 fw-bold mb-2">
+                  <h3 class="section-sub-title mb-2">
                     MMK Construction Management and Supply
                   </h3>
-                  <p class="mb-0 text-secondary-ctm border-bottom pb-3">
+                  <p class="mb-0 text-secondary font-normal border-bottom pb-3">
                     Comprehensive construction solutions
                   </p>
                 </div>
@@ -875,11 +933,11 @@
             <div class="division-item">
               <div class="d-flex">
                 <div class="division-number me-4">
-                  <span class="fw-bold text-body-secondary fs-3">03</span>
+                  <span class="section-sub-title">03</span>
                 </div>
                 <div>
-                  <h3 class="h3 fw-bold mb-2">MMK Investments</h3>
-                  <p class="mb-0 text-secondary-ctm">
+                  <h3 class="section-sub-title mb-2">MMK Investments</h3>
+                  <p class="mb-0 text-secondary font-normal text-base">
                     Strategic wealth management
                   </p>
                 </div>
@@ -900,14 +958,14 @@
           <div class="col-lg-6 pe-lg-5">
             <span
               style="background: #ffffff"
-              class="badge border text-dark px-3 py-2 rounded-pill mb-3"
+              class="section-light-title  mb-3"
               >Our Story</span
             >
-            <h4 class="text-secondary-ctm mb-3">The Story of MMK Group</h4>
-            <h3 class="display-6 fw-bold mb-4">
+            <h4 class="text-lg font-medium text-secondary mb-3">The Story of MMK Group</h4>
+            <h3 class="section-main-title mb-4">
               A Vision Transformed into a Global Empire
             </h3>
-            <p class="mb-4">
+            <p class="mb-4 text-secondary font-normal text-base">
               The journey of MMK Group is not just about business; it's about
               passion, perseverance, and purpose. Founded by Mr. Mohd Mehrab
               Musa in 2008, MMK Group has evolved from a small entrepreneurial
@@ -919,7 +977,7 @@
               a testament to what can be achieved when vision meets
               determination.
             </p>
-            <a href="#" class="btn btn-dark rounded-pill px-4 py-2">
+            <a href="#" class="main-btn">
               Learn More about Our Story
             </a>
           </div>
@@ -937,15 +995,13 @@
     <div class="container-xxl py-5 testimonial-container">
       <div class="container">
         <div class="d-flex justify-content-center">
-          <span
-            style="background: #ffffff"
-            class="badge border bg-ligh text-center text-dark px-3 py-2 rounded-pill mb-3"
+          <span class="section-light-title"
           >
             Testimonial
           </span>
         </div>
         <div class="text-center mx-auto" style="max-width: 500px">
-          <h1 class="display-6 mb-5">Clients Speak Volumes About Us</h1>
+          <h1 class="section-main-title mb-5">Clients Speak Volumes About Us</h1>
         </div>
         <div class="row g-5">
           <div class="col-lg-3 d-none d-lg-block">
@@ -1050,18 +1106,18 @@
           <div class="col-lg-7 py-4">
             <span
               style="background-color: #ffffff"
-              class="badge border text-dark px-3 py-2 rounded-pill mb-3"
+              class="section-light-title mb-3"
               >Let's Work Together</span
             >
-            <h4 class="display-6 fw-bold mb-4">
+            <h4 class="section-main-title mb-4">
               Partner with Us to Simplify Your Trading Journey
             </h4>
-            <p class="lead mb-4">
+            <p class=" text-lg font-regular text-primary mb-4">
               We simplify complex trading processes, deliver high-quality
               products, and cater to diverse industry needs with precision and
               reliability.
             </p>
-            <a href="#" class="btn btn-dark rounded-pill px-4 py-2">
+            <a href="#" class="main-btn">
               Contact Us <i class="fas fa-arrow-right ms-2"></i>
             </a>
           </div>
@@ -1082,16 +1138,16 @@
     <footer class="bg-dark text-white py-5">
       <div class="container pt-5">
         <div class="row mb-5">
-          <div class="col-lg-3 mb-4 mb-lg-0">
+          <div class="col-lg-4 mb-4 mb-lg-0">
             <div class="d-flex align-items-center mb-3">
               <div class="me-2">
                 <img src="images/footer/IMG_1815 1.png" alt="" />
               </div>
               <div class="logo-text text-white">
-                <span class="fw-bold fs-4">MMK</span> Consultants
+                <span class="font-semibold text-invert text-base">MMK Consultants
               </div>
             </div>
-            <p class="mb-4">Opening Doors to Global Trade.</p>
+            <p class="mb-4 font-normal text-invert text-base">Opening Doors to Global Trade.</p>
 
             <div class="newsletter-form mb-4">
               <div class="input-group">
@@ -1122,43 +1178,65 @@
             </div>
           </div>
           <div class="col-6 col-lg-3">
-            <h5 class="fw-bold mb-3">Links</h5>
+            <h5 class="font-normal text-invert text-base mb-3">Links</h5>
             <ul class="list-unstyled">
               <li class="mb-2">
-                <a href="about.html" class="text-white text-decoration-none">About us</a>
+                <a href="about.html" class="font-medium text-invert text-base text-decoration-none"
+                  >About us</a
+                >
               </li>
               <li class="mb-2">
-                <a href="general-trading.html" class="text-white text-decoration-none">General Trading</a>
+                <a
+                  href="general-trading.html"
+                  class="font-medium text-invert text-base text-decoration-none"
+                  >General Trading</a
+                >
               </li>
               <li class="mb-2">
-                <a href="import-export.html" class="text-white text-decoration-none">Import & Export</a>
+                <a
+                  href="import-export.html"
+                  class="font-medium text-invert text-base text-decoration-none"
+                  >Import & Export</a
+                >
               </li>
               <li class="mb-2">
-                <a href="fmgc-service.html" class="text-white text-decoration-none">FMCG Services</a>
+                <a
+                  href="fmgc-service.html"
+                  class="font-medium text-invert text-base text-decoration-none"
+                  >FMCG Services</a
+                >
               </li>
             </ul>
           </div>
-          <div class="col-6 col-lg-3">
-            <h5 class="fw-bold mb-3">Information</h5>
-            <ul class="list-unstyled">
+          <div class="col-6 col-lg-2">
+            <h5 class="font-normal text-invert text-base mb-3">Information</h5>
+            <ul class="list-unstyled font-medium ">
               <li class="mb-2">
-                <a href="contact.html" class="text-white text-decoration-none">Contact us</a>
+                <a href="contact.html" class=" text-decoration-none font-medium text-invert text-base"
+                  >Contact us</a
+                >
               </li>
               <li class="mb-2">
-                <a href="documents.html" class="text-white text-decoration-none">Documents & Forms</a>
+                <a href="documents.html" class=" text-decoration-none font-medium text-invert text-base"
+                  >Documents & Forms</a
+                >
               </li>
               <li class="mb-2">
-                <a href="#" class="text-white text-decoration-none">Privacy Policy</a>
+                <a href="#" class=" text-decoration-none font-medium text-invert text-base"
+                  >Privacy Policy</a
+                >
               </li>
               <li class="mb-2">
-                <a href="#" class="text-white text-decoration-none">Terms of Service</a>
+                <a href="#" class=" text-decoration-none font-medium text-invert text-base"
+                  >Terms of Service</a
+                >
               </li>
             </ul>
           </div>
           <div class="col-lg-3 mt-4 mt-lg-0">
-            <h5 class="fw-bold mb-3">Contact</h5>
-            <ul class="list-unstyled">
-              <li class="mb-2">+14379816442</li>
+            <h5 class="font-normal text-invert text-base mb-3">Contact</h5>
+            <ul class="list-unstyled font-medium text-invert text-base">
+              <li class="mb-2">14379816442</li>
               <li class="mb-2">procurement@mmkconsultants.ca</li>
             </ul>
             <div class="social-links mt-3">
@@ -1225,14 +1303,15 @@
           class="pt-4 text-center"
           style="border-top: 1px solid rgba(255, 255, 255, 0.1)"
         >
-          <p class="mb-0">2024 © MMK Group. All rights reserved.</p>
+          <p class="mb-0 font-normal text-invert text-base">2024 © MMK Group. All rights reserved.</p>
         </div>
       </div>
     </footer>
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-secondary btn-lg-square back-to-top"
+
+    <!-- <a href="#" class="btn btn-lg btn-secondary btn-lg-square back-to-top"
       ><i class="bi bi-arrow-up"></i
-    ></a>
+    ></a> -->
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
