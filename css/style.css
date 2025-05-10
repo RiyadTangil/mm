@@ -130,7 +130,7 @@
 }
 /* global custom class */
 * {
-  font-family: var(--family-fontfamily);
+  font-family: var(--family-fontfamily) !important;
 }
 .bg-light {
   background: #fafafa !important;
