@@ -161,6 +161,21 @@
 .main-btn:hover {
   color: var(--base-white);
 }
+.light-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 16px;
+  background: #ffffff;
+  text-decoration: none;
+  border-radius: 10px;
+  color: var(--base-white);
+  display: inline-block;
+}
+.light-btn:hover {
+  color: var(--base-white);
+}
 .section-light-title {
   box-shadow: 0px 1.5px 4px -1px #0a090b12;
   border: 1px solid var(--border-secondary, #e9eaeb);
@@ -176,7 +191,6 @@
   margin-bottom: 10px;
 
   display: inline-block;
-
 }
 
 .section-main-title {
@@ -597,8 +611,6 @@
   border-radius: 10px;
   font-size: 22px;
   transition: 0.5s;
-
-  
 }
 
 .testimonial-carousel .owl-nav .owl-prev:hover,

@@ -5,70 +5,110 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MMK Consultants - FMCG Services</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <!-- Font Awesome for icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Onest:wght@400;500;600;700&"
+      rel="stylesheet"
+    />
+
+    <!-- Icon Font Stylesheet -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/home.css" rel="stylesheet" />
+ 
+ 
   <style>
-    /* Custom styles */
-    .top-bar {
-      background-color: #212121;
-      color: white;
-      padding: 8px 0;
-      font-size: 14px;
-    }
-
-    .top-bar a {
-      color: white;
-      text-decoration: none;
-    }
-
-    .social-icons a {
-      margin-left: 15px;
-      color: white;
-    }
-
-    .navbar {
-      padding: 15px 0;
-    }
-
-    .navbar-nav .nav-link {
-      color: #212121;
-      margin: 0 10px;
-      font-weight: 500;
-    }
-
-    .navbar-brand img {
-      width: 200px;
-    }
-
-    .btn-quote {
-      background-color: #212121;
-      color: white;
-      border-radius: 4px;
-      padding: 8px 20px;
-    }
 
     .hero-heading {
       font-size: 52px;
       font-weight: bold;
+      
     }
-
-    .nav-link.active {
-      font-weight: 700;
-      color: #000 !important;
-    }
-
     .service-section {
       margin-bottom: 60px;
     }
+    .service-section-title {
+        font-family: 'Onest';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 68px;
+        color: #181D27;
 
+
+    }
+    .service-section-btn {
+          box-sizing: border-box;
+        padding: 10px 16px;
+          gap: 8px;
+          background: #FFFFFF;
+          border: 1px solid #E9EAEB;
+          box-shadow: 0px 1.5px 4px -1px rgba(10, 9, 11, 0.07);
+          border-radius: 8px;
+          font-family: 'Onest';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 20px;
+          align-items: center;
+          letter-spacing: -0.02em;
+          color: #414651;
+
+    }
     .service-category {
       font-size: 14px;
       color: #6c757d;
       text-transform: uppercase;
       letter-spacing: 1px;
       margin-bottom: 5px;
+    }
+    .fmgc-sub-title{
+        font-family: 'Onest';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 32px;
+        color: #181D27;
+
+    }
+    .fmgc-body-title{
+        font-family: 'Onest';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 28px;
+        align-items: center;
+        color: #2D2D2D;
+    }
+    .fmgc-body{
+      font-family: 'Onest';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 28px;
+      color: #2D2D2D;
+
     }
 
     .service-img {
@@ -102,106 +142,83 @@
       margin-bottom: 15px;
       color: #212121;
     }
+    .fmgc-hero-body{
+        font-family: 'Onest';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: -0.01em;
+        color: #535862;
+
+    }
   </style>
 </head>
 
 <body>
 
-<!-- Topbar Start -->
-<div
-  class="container-fluid bg-dark text-white-50 py-2 px-0 d-none d-lg-block"
->
-  <div class="row gx-0 align-items-center">
-    <div class="col-lg-7 px-5 text-start">
-      <div class="h-100 d-inline-flex align-items-center me-4">
-        <small class="fa fa-phone-alt me-2"></small>
-        <small>++88 012 345 678 90</small>
-      </div>
-      <div class="h-100 d-inline-flex align-items-center me-4">
-        <small class="far fa-envelope-open me-2"></small>
-        <small>info@example.com</small>
-      </div>
-      <div class="h-100 d-inline-flex align-items-center me-4">
-        <small class="far fa-clock me-2"></small>
-        <small>Mon - Fri : 09 AM - 09 PM</small>
-      </div>
-    </div>
-    <div class="col-lg-5 px-5 text-end">
-      <div class="h-100 d-inline-flex align-items-center">
-        <a class="text-white-50 ms-4" href="#"
-          ><i class="fab fa-facebook-f"></i
-        ></a>
-        <a class="text-white-50 ms-4" href="#"
-          ><i class="fab fa-twitter"></i
-        ></a>
-        <a class="text-white-50 ms-4" href="#"
-          ><i class="fab fa-linkedin-in"></i
-        ></a>
-        <a class="text-white-50 ms-4" href="#"
-          ><i class="fab fa-instagram"></i
-        ></a>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- Topbar End -->
+   <!-- Topbar Start -->
+  <div class="container-fluid brand-g300  px-0 d-none d-lg-block">
+    <div class="container brand-g300 text-quaternary py-2 px-0 d-none d-lg-block">
+      <div class="row gx-0 align-items-center">
+        <div class="col-lg-7 px-5 text-start d-flex align-item-center">
+          <div class="h-100 d-inline-flex align-items-center me-4">
+            <img class="me-2" src="images/top/Frame (6).png" alt="" />
+            <small class="text-quaternary">+88 012 345 678 90</small>
+          </div>
+          <div class="h-100 d-inline-flex align-items-center me-4">
+            <img class="me-2" src="images/top/Frame (1).png" alt="" />
+            <small class="text-quaternary">info@example.com</small>
+          </div>
+          <div class="h-100 d-inline-flex align-items-center me-4">
+            <img class="me-2" src="images/top/Frame.png" alt="" />
 
-<!-- Navbar Start -->
-<nav
-  class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5"
->
-  <a
-    href="index.html"
-    class="navbar-brand d-flex pe-5  invisible align-items-center"
-  >
-    <img
-      src="images/about/aboutL_logo.png"
-      alt="MMK Consultants Logo"
-      width="200"
-    />
-  </a>
-  <button
-    type="button"
-    class="navbar-toggler"
-    data-bs-toggle="collapse"
-    data-bs-target="#navbarCollapse"
-  >
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarCollapse">
-    <div class="navbar-nav mx-auto bg-light rounded pe-4 py-3 py-lg-0">
-      <a href="index.html" class="nav-item nav-link">Home</a>
-      <a href="about.html" class="nav-item nav-link">About Us</a>
-      <div class="nav-item dropdown">
-        <a
-          href="#"
-          class="nav-link dropdown-toggle active"
-          data-bs-toggle="dropdown"
-          >Our Services</a
-        >
-        <div class="dropdown-menu bg-light border-0 m-0">
-          <a href="general-trading.html" class="dropdown-item"
-            >General Trading</a
-          >
-          <a href="import-export.html" class="dropdown-item"
-            >Import & Export</a
-          >
-          <a href="fmgc-service.html" class="dropdown-item active"
-            >FMCG Services</a
-          >
+            <small class="text-quaternary">Mon - Fri : 09 AM - 09 PM</small>
+          </div>
+        </div>
+        <div class="col-lg-5 ps-5 text-end">
+          <div class="h-100 d-inline-flex align-items-center">
+            <a class="text-white-50 ms-2" href="#"> <img class="me-2" src="images/top/Frame (2).png" alt=""></i></a>
+            <a class="text-white-50 ms-2" href="#"> <img class="me-2" src="images/top/Frame (3).png" alt=""></i></a>
+            <a class="text-white-50 ms-2" href="#"> <img class="me-2" src="images/top/Frame (4).png" alt=""></i></a>
+            <a class="text-white-50 ms-2" href="#"> <img class="" src="images/top/Frame (5).png" alt=""></i></a>
+          </div>
         </div>
       </div>
-      <a href="contact.html" class="nav-item nav-link">Contact Us</a>
-      <a href="documents.html" class="nav-item nav-link"
-        >Documents & Forms</a
-      >
     </div>
-    <a href="contact.html" class="main-btn d-lg-none mt-3">Get A Quote</a>
   </div>
-  <a href="contact.html" class="main-btn d-none d-lg-block">Get A Quote</a>
-</nav>
-<!-- Navbar End -->
+  <!-- Topbar End -->
 
+  <!-- Navbar Start -->
+  <nav class="navbar  navbar-expand-lg bg-white navbar-light sticky-top px-md-4 px-lg-5">
+    <a href="index.html" class="navbar-brand d-flex pe-5  invisible align-items-center">
+      <img src="images/about/aboutL_logo.png" alt="MMK Consultants Logo" width="200" />
+    </a>
+    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <div class="navbar-nav mx-auto bg-light rounded pe-4 py-3 py-lg-0">
+        <a href="index.html" class="nav-item nav-link active">Home</a>
+        <a href="about.html" class="nav-item nav-link">About Us</a>
+        <div class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Our Services</a>
+          <div class="dropdown-menu bg-light border-0 m-0">
+            <a href="general-trading.html" class="dropdown-item">General Trading</a>
+            <a href="import-export.html" class="dropdown-item">Import & Export</a>
+            <a href="fmgc-service.html" class="dropdown-item">FMCG Services</a>
+          </div>
+        </div>
+        <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+        <a href="documents.html" class="nav-item nav-link">Documents & Forms</a>
+      </div>
+      <a href="contact.html" class="main-btn d-lg-none mt-3">Get A Quote</a>
+    </div>
+<div class="me-5 d-none d-lg-block">
+      <a href="contact.html" class="main-btn ">Get A Quote</a>
+</div>
+  </nav>
+  <!-- Navbar End -->
 
 
 
@@ -211,10 +228,10 @@
       <div class="row ">
         <div class="col-lg-6 pt-5 ">
           <!-- <p class="service-category">Products We Offer</p> -->
-          <p style="background-color: #ffffff;" class="mb-4  d-inline-block py-1 px-3 border rounded-pill">FMCG</p>
-          <h2 class="h2  fw-bold">Your Trusted Partner for Premium FMCG Solutions</h2>
+          <p  class="mb-4 section-light-title">FMCG</p>
+          <h2 class="service-section-title">Your Trusted Partner for Premium FMCG Solutions</h2>
 
-          <p>At <span class="fw-bold">MMK Consultants</span>, we are dedicated to connecting businesses with the finest food and beverage products. Leveraging our global expertise and trusted supplier network, we ensure every product meets the highest standards of quality and reliability. With a focus on timely delivery and customized solutions, we help you navigate the complexities of international trade with ease.</p>
+          <p class="fmgc-hero-body py-2">At <span class="fw-bold">MMK Consultants</span>, we are dedicated to connecting businesses with the finest food and beverage products. Leveraging our global expertise and trusted supplier network, we ensure every product meets the highest standards of quality and reliability. With a focus on timely delivery and customized solutions, we help you navigate the complexities of international trade with ease.</p>
 
           <a href="#" class="btn btn-custom">What We Offer </a>
         </div>
@@ -235,21 +252,22 @@
           <img src="images/fmgc/image 4 (6).png" alt="Grains and Cereals" class="img-fluid rounded-4">
         </div>
         <div class="col-md-6">
-          <h2 class="h2 fw-bold mb-2">Grains and Cereals</h2>
-          <p class="mb-3">Premium Grains and Cereals from Global Producers</p>
+          <h2 class="service-section-title mb-2">Grains and Cereals</h2>
+          <p class="mb-3 fmgc-sub-title">Premium Grains and Cereals from Global Producers</p>
           
           <div class="mb-3">
-            <p class="mb-1 fw-bold">Products:</p>
-            <p class="mb-3">Rice, Wheat, Corn, Oats, Barley, Lentils</p>
+            <p class="mb-1 fmgc-body-title">Products:</p>
+            <p class="mb-3 fmgc-body">Rice, Wheat, Corn, Oats, Barley, Lentils</p>
           </div>
           
           <div class="mb-3">
-            <p class="mb-1 fw-bold">Country of Origin:</p>
-            <p class="mb-3">Russia, Ukraine, Canada, Australia, India</p>
+            <p class="mb-1 fmgc-body-title ">Country of Origin:</p>
+            <p class="mb-3 fmgc-body">Russia, Ukraine, Canada, Australia, India</p>
           </div>
           
-          <a href="#" class="btn btn-sm btn-outline-dark rounded-pill px-3">
-            Get Quotation <i class="fas fa-arrow-right ms-1"></i>
+         
+          <a href="#" class="service-section-btn">
+            Get Quotation <img class="ms-2" src="images/icon/arrow-right-dark.png" alt="icon">
           </a>
         </div>
       </div>
@@ -260,21 +278,22 @@
           <img src="images/fmgc/image 4 (7).png" alt="Fruit and Vegetables" class="img-fluid rounded-4">
         </div>
         <div class="col-md-6">
-          <h2 class="h2 fw-bold mb-2">Fruit and Vegetables</h2>
-          <p class="mb-3">Fresh and Nutritious Produce from Trusted Farms</p>
+          <h2 class="service-section-title mb-2">Fruit and Vegetables</h2>
+          <p class="mb-3 fmgc-sub-title">Fresh and Nutritious Produce from Trusted Farms</p>
           
           <div class="mb-3">
-            <p class="mb-1 fw-bold">Products:</p>
-            <p class="mb-3">Apples, Oranges, Grapes</p>
+            <p class="mb-1 fmgc-body-title">Products:</p>
+            <p class="mb-3 fmgc-body">Apples, Oranges, Grapes</p>
           </div>
           
           <div class="mb-3">
-            <p class="mb-1 fw-bold">Country of Origin:</p>
-            <p class="mb-3">China, Egypt, South Africa</p>
+            <p class="mb-1 fmgc-body-title">Country of Origin:</p>
+            <p class="mb-3 fmgc-body">China, Egypt, South Africa</p>
           </div>
           
-          <a href="#" class="btn btn-sm btn-outline-dark rounded-pill px-3">
-            Get Quotation <i class="fas fa-arrow-right ms-1"></i>
+          
+          <a href="#" class="service-section-btn">
+            Get Quotation <img class="ms-2" src="images/icon/arrow-right-dark.png" alt="icon">
           </a>
         </div>
       </div>
@@ -285,21 +304,22 @@
           <img src="images/fmgc/image 4 (8).png" alt="Sugars" class="img-fluid rounded-4">
         </div>
         <div class="col-md-6">
-          <h2 class="h2 fw-bold mb-2">Sugars</h2>
-          <p class="mb-3">High-Quality Sugar Solutions for Your Business</p>
+          <h2 class="service-section-title mb-2">Sugars</h2>
+          <p class="mb-3 fmgc-sub-title">High-Quality Sugar Solutions for Your Business</p>
           
           <div class="mb-3">
-            <p class="mb-1 fw-bold">Products:</p>
-            <p class="mb-3">Raw Sugar, Refined Sugar</p>
+            <p class="mb-1 fmgc-body-title">Products:</p>
+            <p class="mb-3 fmgc-body">Raw Sugar, Refined Sugar</p>
           </div>
           
           <div class="mb-3">
-            <p class="mb-1 fw-bold">Country of Origin:</p>
-            <p class="mb-3">Brazil, Thailand</p>
+            <p class="mb-1 fmgc-body-title">Country of Origin:</p>
+            <p class="mb-3 fmgc-body">Brazil, Thailand</p>
           </div>
           
-          <a href="#" class="btn btn-sm btn-outline-dark rounded-pill px-3">
-            Get Quotation <i class="fas fa-arrow-right ms-1"></i>
+          
+          <a href="#" class="service-section-btn">
+            Get Quotation <img class="ms-2" src="images/icon/arrow-right-dark.png" alt="icon">
           </a>
         </div>
       </div>
@@ -310,21 +330,22 @@
           <img src="images/fmgc/image 4 (9).png" alt="Dairy Products" class="img-fluid rounded-4">
         </div>
         <div class="col-md-6">
-          <h2 class="h2 fw-bold mb-2">Dairy Products</h2>
-          <p class="mb-3">Reliable and Premium Dairy Products for Every Need</p>
+          <h2 class="service-section-title mb-2">Dairy Products</h2>
+          <p class="mb-3 fmgc-sub-title">Reliable and Premium Dairy Products for Every Need</p>
           
           <div class="mb-3">
-            <p class="mb-1 fw-bold">Products:</p>
-            <p class="mb-3">Milk Powder, Whey</p>
+            <p class="mb-1 fmgc-body-title">Products:</p>
+            <p class="mb-3 fmgc-body">Milk Powder, Whey</p>
           </div>
           
           <div class="mb-3">
-            <p class="mb-1 fw-bold">Country of Origin:</p>
-            <p class="mb-3">Iran, Ukraine</p>
+            <p class="mb-1 fmgc-body-title">Country of Origin:</p>
+            <p class="mb-3 fmgc-body">Iran, Ukraine</p>
           </div>
           
-          <a href="#" class="btn btn-sm btn-outline-dark rounded-pill px-3">
-            Get Quotation <i class="fas fa-arrow-right ms-1"></i>
+          
+          <a href="#" class="service-section-btn">
+            Get Quotation <img class="ms-2" src="images/icon/arrow-right-dark.png" alt="icon">
           </a>
         </div>
       </div>
@@ -335,21 +356,22 @@
           <img src="images/fmgc/image 4 (10).png" alt="Fat and Oils" class="img-fluid rounded-4">
         </div>
         <div class="col-md-6">
-          <h2 class="h2 fw-bold mb-2">Fat and Oils</h2>
-          <p class="mb-3">Superior Vegetable Oils for Diverse Applications</p>
+          <h2 class="service-section-title mb-2">Fat and Oils</h2>
+          <p class="mb-3 fmgc-sub-title">Superior Vegetable Oils for Diverse Applications</p>
           
           <div class="mb-3">
-            <p class="mb-1 fw-bold">Products:</p>
-            <p class="mb-3">Rapeseed Oil, Palm Oil, Sunflower Oil</p>
+            <p class="mb-1 fmgc-body-title">Products:</p>
+            <p class="mb-3 fmgc-body">Rapeseed Oil, Palm Oil, Sunflower Oil</p>
           </div>
           
           <div class="mb-3">
-            <p class="mb-1 fw-bold">Country of Origin:</p>
-            <p class="mb-3">Canada, Brazil</p>
+            <p class="mb-1 fmgc-body-title">Country of Origin:</p>
+            <p class="mb-3 fmgc-body">Canada, Brazil</p>
           </div>
           
-          <a href="#" class="btn btn-sm btn-outline-dark rounded-pill px-3">
-            Get Quotation <i class="fas fa-arrow-right ms-1"></i>
+          
+          <a href="#" class="service-section-btn">
+            Get Quotation <img class="ms-2" src="images/icon/arrow-right-dark.png" alt="icon">
           </a>
         </div>
       </div>
@@ -360,21 +382,22 @@
           <img src="images/fmgc/image 4 (11).png" alt="Spices and Herbs" class="img-fluid rounded-4">
         </div>
         <div class="col-md-6">
-          <h2 class="h2 fw-bold mb-2">Spices and Herbs</h2>
-          <p class="mb-3">Authentic Spices & Herbs for Richer Flavors</p>
+          <h2 class="service-section-title mb-2">Spices and Herbs</h2>
+          <p class="mb-3 fmgc-sub-title">Authentic Spices & Herbs for Richer Flavors</p>
           
           <div class="mb-3">
-            <p class="mb-1 fw-bold">Products:</p>
-            <p class="mb-3">Salt, Pepper, Garlic, Ginger, Cinnamon, Cumin</p>
+            <p class="mb-1 fmgc-body-title">Products:</p>
+            <p class="mb-3 fmgc-body">Salt, Pepper, Garlic, Ginger, Cinnamon, Cumin</p>
           </div>
           
           <div class="mb-3">
-            <p class="mb-1 fw-bold">Country of Origin:</p>
-            <p class="mb-3">India</p>
+            <p class="mb-1 fmgc-body-title ">Country of Origin:</p>
+            <p class="mb-3 fmgc-body">India</p>
           </div>
           
-          <a href="#" class="btn btn-sm btn-outline-dark rounded-pill px-3">
-            Get Quotation <i class="fas fa-arrow-right ms-1"></i>
+          
+          <a href="#" class="service-section-btn">
+            Get Quotation <img class="ms-2" src="images/icon/arrow-right-dark.png" alt="icon">
           </a>
         </div>
       </div>
@@ -385,33 +408,34 @@
           <img src="images/fmgc/image 4 (12).png" alt="Seed Items" class="img-fluid rounded-4">
         </div>
         <div class="col-md-6">
-          <h2 class="h2 fw-bold mb-2">Seed Items</h2>
-          <p class="mb-3">Premium Specialty Items for Unique Needs</p>
+          <h2 class="service-section-title mb-2">Seed Items</h2>
+          <p class="mb-3 fmgc-sub-title">Premium Specialty Items for Unique Needs</p>
           
           <div class="mb-3">
-            <p class="mb-1 fw-bold">Products:</p>
-            <p class="mb-3">Yellow Peas, Soybean</p>
+            <p class="mb-1 fmgc-body-title">Products:</p>
+            <p class="mb-3 fmgc-body">Yellow Peas, Soybean</p>
           </div>
           
           <div class="mb-3">
-            <p class="mb-1 fw-bold">Country of Origin:</p>
-            <p class="mb-3">Russia, Canada, Ukraine</p>
+            <p class="mb-1 fmgc-body-title">Country of Origin:</p>
+            <p class="mb-3 fmgc-body">Russia, Canada, Ukraine</p>
           </div>
           
-          <a href="#" class="btn btn-sm btn-outline-dark rounded-pill px-3">
-            Get Quotation <i class="fas fa-arrow-right ms-1"></i>
+          
+          <a href="#" class="service-section-btn">
+            Get Quotation <img class="ms-2" src="images/icon/arrow-right-dark.png" alt="icon">
           </a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Why Choose MMK Consultants Section -->
+    <!-- Why Choose MMK Consultants Section -->
   <section class="why-choose-section py-5 bg-light">
     <div class="container">
       <div class="text-center mb-4">
-        <span class="badge bg-white border text-dark rounded-pill px-4 py-2 mb-3">Our Unique Value</span>
-        <h2 class="display-5 fw-bold mb-5">Why Choose MMK Consultants?</h2>
+        <span class="section-light-title mb-3">Our Unique Value</span>
+        <h2 class="section-main-title mb-5">Why Choose MMK Consultants?</h2>
       </div>
       
       <div class="row justify-content-center">
@@ -422,8 +446,8 @@
               <div class="mb-4 bg-light rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 70px; height: 70px;">
                 <img src="images/tranding_service/icon/global.png" alt="Global Reach" style="width: 30px; height: 30px;">
               </div>
-              <h4 class="h4 fw-bold mb-3">Global Reach</h4>
-              <p class="card-text text-secondary">
+              <h4 class="section-sub-title  mb-3">Global Reach</h4>
+              <p class="section-body  text-secondary">
                 We have extensive networks and partnerships worldwide, ensuring that you can access the best suppliers and buyers for your needs.
               </p>
             </div>
@@ -437,8 +461,8 @@
               <div class="mb-4 bg-light rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 70px; height: 70px;">
                 <img src="images/tranding_service/icon/favorite-chart.png" alt="Expertise" style="width: 30px; height: 30px;">
               </div>
-              <h4 class="h4 fw-bold mb-3">Expertise and Experience</h4>
-              <p class="card-text text-secondary">
+              <h4 class="section-sub-title  mb-3">Expertise and Experience</h4>
+              <p class="section-body  text-secondary">
                 With years of experience in international trade, we bring unmatched knowledge and professionalism to every project.
               </p>
             </div>
@@ -452,8 +476,8 @@
               <div class="mb-4 bg-light rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 70px; height: 70px;">
                 <img src="images/tranding_service/icon/triangle.png" alt="Tailored Solutions" style="width: 30px; height: 30px;">
               </div>
-              <h4 class="h4 fw-bold mb-3">Tailored Solutions</h4>
-              <p class="card-text text-secondary">
+              <h4 class="section-sub-title  mb-3">Tailored Solutions</h4>
+              <p class="section-body  text-secondary">
                 We understand that every business is unique. That's why our solutions are tailored to your specific requirements, ensuring optimal results.
               </p>
             </div>
@@ -462,30 +486,30 @@
       </div>
       
       <div class="text-center mt-4">
-        <a href="#" class="btn btn-dark rounded-pill px-4 py-2">
-          Explore Our Services <i class="fas fa-arrow-right ms-2"></i>
+        <a href="#" class="main-btn">
+          Explore Our Services <img src="images/icon/arrow-right.png" alt="">
         </a>
       </div>
     </div>
   </section>
-
-  <!-- Let's Work Together Section -->
+     <!-- Let's Work Together Section -->
   <section style="margin-bottom: -100px" class="work-together-section py-5 mt-n5 pt-0 pb-0">
     <div class="container py-5">
-      <div class="row bg-light rounded-4 shadow-sm p-4 position-relative overflow-hidden">
+      <div style="border-radius: 20px" class="row bg-light shadow-sm p-lg-4 position-relative overflow-hidden">
         <div class="col-lg-7 py-4">
-          <span style="background-color: #ffffff" class="badge border text-dark px-3 py-2 rounded-pill mb-3">Let's Work
-            Together</span>
-          <h2 class="display-5 fw-bold mb-4">
+
+          <span style="background-color: #ffffff" class="section-light-title mb-3">Let's Work Together</span>
+
+          <h4 class="section-main-title text-lh-9xl mb-4   ">
             Partner with Us to Simplify Your Trading Journey
-          </h2>
-          <p class="lead mb-4">
+          </h4>
+          <p class=" text-lg font-regular text-primary mb-4">
             We simplify complex trading processes, deliver high-quality
             products, and cater to diverse industry needs with precision and
             reliability.
           </p>
-          <a href="contact.html" class="btn btn-dark rounded-pill px-4 py-2">
-            Contact Us <i class="fas fa-arrow-right ms-2"></i>
+          <a href="#" class="main-btn">
+            Contact Us <img src="images/icon/arrow-up.png" alt="">
           </a>
         </div>
         <div class="col-lg-5 d-none d-lg-flex align-items-center justify-content-end">
@@ -505,13 +529,13 @@
               <img src="images/footer/IMG_1815 1.png" alt="" />
             </div>
             <div class="logo-text text-white">
-              <span class="fw-bold fs-4">MMK</span> Consultants
+              <span class="font-semibold text-invert text-base">MMK Consultants
             </div>
           </div>
-          <p class="mb-4">Opening Doors to Global Trade.</p>
+          <p class="mb-4 font-normal text-invert text-base">Opening Doors to Global Trade.</p>
 
           <div class="newsletter-form mb-4">
-            <div class="input-group">
+            <div class="input-group d-none">
               <input type="email" class="form-control bg-transparent text-white" placeholder="Email" aria-label="Email"
                 style="
                     border-color: rgba(255, 255, 255, 0.3);
@@ -530,47 +554,55 @@
           </div>
         </div>
         <div class="col-6 col-lg-3">
-          <h5 class="fw-bold mb-3">Links</h5>
-          <ul class="list-unstyled">
-            <li class="mb-2">
-              <a href="about.html" class="text-white text-decoration-none">About us</a>
-            </li>
-            <li class="mb-2">
-              <a href="general-trading.html" class="text-white text-decoration-none">General Trading</a>
-            </li>
-            <li class="mb-2">
-              <a href="import-export.html" class="text-white text-decoration-none">Import & Export</a>
-            </li>
-            <li class="mb-2">
-              <a href="fmgc-service.html" class="text-white text-decoration-none">FMCG Services</a>
-            </li>
-          </ul>
+          <div class=" ">
+            <div>
+              <h5 class="font-normal text-invert text-base mb-3">Links</h5>
+              <ul class="list-unstyled">
+                <li class="mb-2">
+                  <a href="about.html" class="font-medium text-invert  text-base text-decoration-none">About us</a>
+                </li>
+                <li class="mb-2">
+                  <a href="general-trading.html"
+                    class="font-medium text-invert text-base text-decoration-none">Properties</a>
+                </li>
+                <li class="mb-2">
+                  <a href="import-export.html" class="font-medium text-invert text-base text-decoration-none">Property
+                    Details</a>
+                </li>
+                <li class="mb-2">
+                  <a href="fmgc-service.html" class="font-medium text-invert text-base text-decoration-none">Blog</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
         <div class="col-6 col-lg-3">
-          <h5 class="fw-bold mb-3">Information</h5>
-          <ul class="list-unstyled">
+          <h5 class="font-normal text-invert text-base mb-3 ">Information</h5>
+          <ul class="list-unstyled font-medium ">
             <li class="mb-2">
-              <a href="contact.html" class="text-white text-decoration-none">Contact us</a>
+              <a href="contact.html" class=" text-decoration-none font-medium text-invert text-base">Contact us</a>
             </li>
             <li class="mb-2">
-              <a href="documents.html" class="text-white text-decoration-none">Documents & Forms</a>
+              <a href="documents.html" class=" text-decoration-none font-medium text-invert text-base">Privacy
+                Policy</a>
             </li>
             <li class="mb-2">
-              <a href="#" class="text-white text-decoration-none">Privacy Policy</a>
+              <a href="#" class=" text-decoration-none font-medium text-invert text-base">FAQ</a>
             </li>
             <li class="mb-2">
-              <a href="#" class="text-white text-decoration-none">Terms of Service</a>
+              <a href="#" class=" text-decoration-none font-medium text-invert text-base">404</a>
             </li>
           </ul>
         </div>
-        <div class="col-lg-3 mt-4 mt-lg-0">
-          <h5 class="fw-bold mb-3">Contact</h5>
-          <ul class="list-unstyled">
-            <li class="mb-2">++88 012 345 678 90</li>
-            <li class="mb-2">info@example.com</li>
-          </ul>
-          <div class="social-links mt-3">
-            <a href="#" class="text-white me-2 d-inline-block" style="
+        <div class="col-lg-3 mt-4 mt-lg-0 ">
+          <div class="ms-lg-n3">
+            <h5 class="font-normal text-invert text-base mb-3">Contact</h5>
+            <ul class="list-unstyled font-medium text-invert text-base">
+              <li class="mb-2">+14379816442</li>
+              <li class="mb-2">procurement@mmkconsultants.ca</li>
+            </ul>
+            <div class="social-links mt-3">
+              <a href="#" class="text-white me-2 d-inline-block" style="
                   width: 32px;
                   height: 32px;
                   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -578,9 +610,10 @@
                   text-align: center;
                   line-height: 32px;
                 ">
-              <i class="fab fa-twitter"></i>
-            </a>
-            <a href="#" class="text-white me-2 d-inline-block" style="
+                <img src="images/footer/Footer icon.png" class="pb-1" alt="">
+
+              </a>
+              <a href="#" class="text-white me-2 d-inline-block" style="
                   width: 32px;
                   height: 32px;
                   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -588,9 +621,9 @@
                   text-align: center;
                   line-height: 32px;
                 ">
-              <i class="fab fa-facebook-f"></i>
-            </a>
-            <a href="#" class="text-white me-2 d-inline-block" style="
+                <img src="images/footer/Footer icon (1).png" class="pb-1" alt="">
+              </a>
+              <a href="#" class="text-white me-2 d-inline-block" style="
                   width: 32px;
                   height: 32px;
                   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -598,9 +631,9 @@
                   text-align: center;
                   line-height: 32px;
                 ">
-              <i class="fab fa-linkedin-in"></i>
-            </a>
-            <a href="#" class="text-white me-2 d-inline-block" style="
+                <img src="images/footer/Footer icon (2).png" class="pb-1" alt="">
+              </a>
+              <a href="#" class="text-white me-2 d-inline-block " style="
                   width: 32px;
                   height: 32px;
                   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -608,16 +641,23 @@
                   text-align: center;
                   line-height: 32px;
                 ">
-              <i class="fab fa-vimeo-v"></i>
-            </a>
+                <img src="images/footer/Component.png" class="pb-1" alt="">
+              </a>
+            </div>
           </div>
         </div>
       </div>
-      <div class="pt-4 text-center" style="border-top: 1px solid rgba(255, 255, 255, 0.1)">
-        <p class="mb-0">2024 © MMK Group. All rights reserved.</p>
+      <div>
+        <img class="img-fluid" src="images/icon/Line 10.png" alt="">
+      </div>
+      <div class="pt-4 text-center">
+        <p class="mb-0 font-normal text-invert text-base">2024 © MMK Group. All rights reserved.</p>
       </div>
     </div>
   </footer>
+
+
+ 
 
   <!-- JavaScript Libraries -->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
