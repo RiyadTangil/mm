@@ -1044,3 +1044,32 @@
 .font-onest {
   font-family: var(--family-fontfamily);
 }
+
+/* Form styling */
+.form-label {
+  font-weight: var(--weight-font-medium);
+  font-size: var(--size-text-sm);
+  line-height: var(--linehight-text-sm);
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+}
+
+.form-control,
+.form-select {
+  padding: 12px;
+  border: 1px solid var(--border-primary);
+  border-radius: var(--cornerradius-radius-default);
+  font-weight: var(--weight-font-medium);
+  font-size: var(--size-text-sm);
+  line-height: var(--linehight-text-sm);
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+}
+
+.form-control:focus,
+.form-select:focus {
+  box-shadow: none;
+  border-color: var(--brand-g300);
+}
+
+/* end of form styling */

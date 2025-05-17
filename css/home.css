@@ -1,0 +1,498 @@
+.navbar {
+  padding: 15px 0;
+}
+
+.navbar-nav .nav-link {
+  color: #212121;
+  margin: 0 10px;
+  font-weight: 500;
+}
+
+.navbar-brand img {
+  width: 200px;
+}
+
+.btn-quote {
+  background-color: #212121;
+  color: white;
+  border-radius: 4px;
+  padding: 8px 20px;
+}
+
+.mmk-logo {
+  width: 220px;
+  height: 220px;
+}
+
+.hero-section {
+  padding: 60px 0;
+}
+
+.hero-heading {
+  font-size: 52px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.hero-text {
+  color: #555;
+  line-height: 1.6;
+  margin: 20px 0 30px;
+  font-size: 13px;
+}
+
+.text-secondary-ctm {
+  color: #414651;
+}
+
+.btn-dark-custom {
+  background-color: #2b2b2b;
+  color: #ffffff;
+  padding: 10px 25px;
+  border-radius: 30px;
+  border: none;
+  font-weight: 500;
+}
+
+.btn-light-custom {
+  background-color: transparent;
+  color: #212121;
+  padding: 10px 25px;
+  border-radius: 30px;
+  border: 1px solid #ddd;
+  margin-left: 15px;
+}
+
+@media (max-width: 390px) {
+  .btn-dark-custom,
+  .btn-light-custom {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+
+  .btn-light-custom {
+    margin-left: 8px;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+/* Smaller navbar toggle for very small screens */
+@media (max-width: 375px) {
+  .navbar-toggler {
+    padding: 0.2rem 0.4rem;
+    font-size: 1.7rem;
+  }
+
+  .navbar-brand {
+    max-width: 75%;
+  }
+
+  .navbar-toggler-icon {
+    width: 1em;
+    height: 1em;
+  }
+
+  .navbar {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
+
+/* Stats Section Responsive Fix */
+@media (max-width: 575px) {
+  /* Smaller font for stats numbers */
+  .stats-real-estate .text-8xl {
+    font-size: 3rem !important;
+  }
+
+  /* Smaller description text */
+  .stats-real-estate .text-xl {
+    font-size: 0.9rem !important;
+    line-height: 1.2;
+  }
+
+  /* Adjust card padding */
+  .stats-real-estate .bg-white {
+    padding: 0.75rem !important;
+  }
+}
+
+@media (max-width: 450px) {
+  /* Further reduce font size for smallest screens */
+  .stats-real-estate .text-8xl {
+    font-size: 2.5rem !important;
+  }
+
+  .stats-real-estate .text-xl {
+    font-size: 0.8rem !important;
+  }
+
+  /* Reduce spacing between stat cards */
+  .stats-real-estate .col-6 {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .stats-real-estate .row {
+    margin-left: -5px;
+    margin-right: -5px;
+  }
+
+  /* Adjust card height */
+  .stats-real-estate .bg-white {
+    height: auto !important;
+    padding: 0.5rem !important;
+  }
+
+  /* Reduce section heading size */
+  .stats-real-estate .text-7xl {
+    font-size: 1.75rem !important;
+    line-height: 1.3;
+    margin-bottom: 0.75rem !important;
+  }
+
+  .stats-real-estate .text-lg {
+    font-size: 0.9rem !important;
+    margin-bottom: 1rem !important;
+  }
+}
+
+.carousel-indicators {
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.carousel-indicators button {
+  width: 25px !important;
+  height: 5px !important;
+  background-color: #aaa !important;
+  border-radius: 0 !important;
+}
+
+.carousel-indicators .active {
+  background-color: #212121 !important;
+}
+
+/* Updated Product Carousel Styles */
+.products-section {
+  overflow: hidden;
+  width: 100%;
+  padding: 10px 0;
+  margin-bottom: 20px;
+}
+
+.product-carousel-wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.product-track {
+  display: flex;
+  animation: scrollProducts 40s linear infinite;
+  width: max-content;
+  cursor: grab;
+  gap: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.product-track:active {
+  cursor: grabbing;
+}
+
+.product-track:hover {
+  animation-play-state: paused;
+}
+
+.product-slide {
+  display: flex;
+  white-space: nowrap;
+  flex-shrink: 0;
+  gap: 0;
+  margin: 0;
+  padding: 0;
+  width: fit-content;
+}
+
+.product-item {
+  display: inline-block;
+  flex: 0 0 auto;
+  width: 14.285%; /* Default for desktop: 7 items per row */
+  padding: 0 8px;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.product-card {
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  margin: 0;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+  max-width: 85%;
+  max-height: 120px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover img {
+  transform: scale(1.05);
+}
+
+@keyframes scrollProducts {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 1199.98px) {
+  .product-item {
+    width: 25%; /* 4 items on large screens */
+    padding: 0 6px;
+  }
+
+  .product-card {
+    height: 170px;
+  }
+
+  .product-track {
+    animation-duration: 35s;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .product-item {
+    width: 33.333%; /* 3 items on medium screens */
+    padding: 0 5px;
+  }
+
+  .product-card {
+    height: 160px;
+  }
+
+  .product-track {
+    animation-duration: 30s;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .product-item {
+    width: 50%; /* 2 items on small screens */
+    padding: 0 4px;
+  }
+
+  .product-card {
+    height: 150px;
+  }
+
+  .product-card img {
+    max-height: 100px;
+  }
+
+  .product-track {
+    animation-duration: 25s;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .products-section {
+    padding: 5px 0;
+  }
+
+  .product-item {
+    width: 50%;
+    /* 2 items on mobile */
+    padding: 0 2px;
+    box-sizing: border-box;
+  }
+
+  .product-slide {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .product-card {
+    height: 110px;
+    border-radius: 6px;
+    margin: 0 2px;
+    width: 100%;
+  }
+
+  .product-card img {
+    max-width: 80%;
+    max-height: 70px;
+  }
+
+  .product-track {
+    animation-duration: 40s; /* Will be overridden by JS but good to have as fallback */
+  }
+}
+
+/* Specific styles for very small screens */
+@media (max-width: 359.98px) {
+  .product-item {
+    width: 50%; /* Ensure 2 items on very small screens */
+  }
+
+  .product-card {
+    height: 100px;
+  }
+
+  .product-card img {
+    max-width: 100%;
+    max-height: 60px;
+  }
+}
+
+.circle-img {
+  margin-top: 50px;
+}
+
+/* Responsive fixes for topbar and navbar between 990-1200px */
+@media (min-width: 991px) and (max-width: 1199px) {
+  /* Topbar fixes */
+  .container-fluid.brand-g300 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .text-quaternary {
+    font-size: 0.75rem;
+  }
+
+  .h-100.d-inline-flex {
+    margin-right: 8px !important;
+  }
+
+  /* Navbar fixes */
+  .navbar-nav .nav-link {
+    margin: 0 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 0.9rem;
+  }
+
+  .navbar-brand img {
+    width: 180px;
+  }
+
+  .navbar {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .main-btn {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Further navbar fixes for 990-1050px range */
+@media (min-width: 991px) and (max-width: 1050px) {
+  .navbar-nav .nav-link {
+    margin: 0 2px;
+    padding-left: 3px;
+    padding-right: 3px;
+    font-size: 0.85rem;
+  }
+
+  .navbar-brand img {
+    width: 160px;
+  }
+
+  .main-btn {
+    padding: 6px 10px;
+    font-size: 0.85rem;
+  }
+
+  .navbar-nav {
+    margin-left: -15px;
+  }
+
+  .navbar > .container-fluid {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+/* Reduce section headers on mobile */
+@media (max-width: 767px) {
+  /* Heading size reductions */
+  .text-7xl,
+  .section-main-title {
+    font-size: 1.8rem !important;
+    line-height: 1.3 !important;
+  }
+
+  h2.text-7xl {
+    font-size: 1.8rem !important;
+    margin-bottom: 1rem !important;
+  }
+
+  .text-lh-9xl {
+    line-height: 1.3 !important;
+  }
+
+  /* Reduce hero heading */
+  .text-7xl.my-4 {
+    font-size: 1.7rem !important;
+    margin-top: 0.5rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+
+  /* Other text adjustments */
+  .text-lg {
+    font-size: 1rem !important;
+  }
+
+  .section-sub-title {
+    font-size: 1.2rem !important;
+  }
+
+  /* Adjust spacing */
+  .mb-4 {
+    margin-bottom: 0.75rem !important;
+  }
+
+  .py-4 {
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+  }
+}
+
+/* Further reductions for smallest screens */
+@media (max-width: 575px) {
+  .text-7xl,
+  .section-main-title {
+    font-size: 1.5rem !important;
+  }
+
+  .text-2xl {
+    font-size: 1.2rem !important;
+  }
+}
