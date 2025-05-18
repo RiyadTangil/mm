@@ -11,8 +11,10 @@
     };
     spinner();
     
-    // Initialize navbar logo visibility
-    $('.navbar-brand').addClass('invisible');
+    // Initialize navbar logo visibility - only for home page
+    if (window.location.pathname.includes('index.html') || window.location.pathname.endsWith('/')) {
+        $('.navbar-brand').addClass('invisible');
+    }
     
     // Initiate the wowjs
     new WOW().init();
@@ -22,19 +24,27 @@
     $(window).scroll(function () {
         if ($(this).scrollTop() > 300) {
             $('.sticky-top').addClass('shadow-sm').css('top', '0px');
-            $('.navbar-brand').removeClass('invisible');
+            // Only hide/show logo on home page
+            if (window.location.pathname.includes('index.html') || window.location.pathname.endsWith('/')) {
+                $('.navbar-brand').removeClass('invisible');
+            }
         } else {
             $('.sticky-top').removeClass('shadow-sm').css('top', '-100px');
-            $('.navbar-brand').addClass('invisible');
+            // Only hide/show logo on home page
+            if (window.location.pathname.includes('index.html') || window.location.pathname.endsWith('/')) {
+                $('.navbar-brand').addClass('invisible');
+            }
         }
     });
     
     // Initial check for scroll position
     $(document).ready(function() {
-        if ($(window).scrollTop() > 300) {
-            $('.navbar-brand').removeClass('invisible');
-        } else {
-            $('.navbar-brand').addClass('invisible');
+        if (window.location.pathname.includes('index.html') || window.location.pathname.endsWith('/')) {
+            if ($(window).scrollTop() > 300) {
+                $('.navbar-brand').removeClass('invisible');
+            } else {
+                $('.navbar-brand').addClass('invisible');
+            }
         }
     });
     
