@@ -263,7 +263,8 @@
     .product-item {
       display: inline-block;
       flex: 0 0 auto;
-      width: 14.285%; /* Default for desktop: 7 items per row */
+      width: 14.285%;
+      /* Default for desktop: 7 items per row */
       padding: 0 8px;
       box-sizing: border-box;
       margin: 0;
@@ -311,13 +312,14 @@
     /* Responsive adjustments */
     @media (max-width: 1199.98px) {
       .product-item {
-        width: 25%; /* 4 items on large screens */
+        width: 25%;
+        /* 4 items on large screens */
         padding: 0 6px;
       }
 
       .product-card {
         height: 170px;
-        }
+      }
 
       .product-track {
         animation-duration: 35s;
@@ -326,7 +328,8 @@
 
     @media (max-width: 991.98px) {
       .product-item {
-        width: 33.333%; /* 3 items on medium screens */
+        width: 33.333%;
+        /* 3 items on medium screens */
         padding: 0 5px;
       }
 
@@ -341,7 +344,8 @@
 
     @media (max-width: 767.98px) {
       .product-item {
-        width: 50%; /* 2 items on small screens */
+        width: 50%;
+        /* 2 items on small screens */
         padding: 0 4px;
       }
 
@@ -388,14 +392,16 @@
       }
 
       .product-track {
-        animation-duration: 40s; /* Will be overridden by JS but good to have as fallback */
+        animation-duration: 40s;
+        /* Will be overridden by JS but good to have as fallback */
       }
     }
 
     /* Specific styles for very small screens */
     @media (max-width: 359.98px) {
       .product-item {
-        width: 50% ; /* Ensure 2 items on very small screens */
+        width: 50%;
+        /* Ensure 2 items on very small screens */
       }
 
       .product-card {
@@ -414,20 +420,21 @@
 
     /* Responsive fixes for topbar and navbar between 990-1200px */
     @media (min-width: 991px) and (max-width: 1199px) {
+
       /* Topbar fixes */
       .container-fluid.brand-g300 {
         padding-left: 10px;
         padding-right: 10px;
       }
-      
+
       .text-quaternary {
         font-size: 0.75rem;
       }
-      
+
       .h-100.d-inline-flex {
         margin-right: 8px !important;
       }
-      
+
       /* Navbar fixes */
       .navbar-nav .nav-link {
         margin: 0 5px;
@@ -435,22 +442,22 @@
         padding-right: 5px;
         font-size: 0.9rem;
       }
-      
+
       .navbar-brand img {
         width: 180px;
       }
-      
+
       .navbar {
         padding-left: 15px;
         padding-right: 15px;
       }
-      
+
       .main-btn {
         padding: 8px 15px;
         font-size: 0.9rem;
       }
     }
-    
+
     /* Further navbar fixes for 990-1050px range */
     @media (min-width: 991px) and (max-width: 1050px) {
       .navbar-nav .nav-link {
@@ -459,76 +466,80 @@
         padding-right: 3px;
         font-size: 0.85rem;
       }
-      
+
       .navbar-brand img {
         width: 160px;
       }
-      
+
       .main-btn {
         padding: 6px 10px;
         font-size: 0.85rem;
       }
-      
+
       .navbar-nav {
         margin-left: -15px;
       }
-      
-      .navbar > .container-fluid {
+
+      .navbar>.container-fluid {
         padding-left: 5px;
         padding-right: 5px;
       }
     }
-    
+
     /* Reduce section headers on mobile */
     @media (max-width: 767px) {
+
       /* Heading size reductions */
-      .text-7xl, .section-main-title {
+      .text-7xl,
+      .section-main-title {
         font-size: 1.8rem !important;
         line-height: 1.3 !important;
       }
-      
+
       h2.text-7xl {
         font-size: 1.8rem !important;
         margin-bottom: 1rem !important;
       }
-      
+
       .text-lh-9xl {
         line-height: 1.3 !important;
       }
-      
+
       /* Reduce hero heading */
       .text-7xl.my-4 {
         font-size: 1.7rem !important;
         margin-top: 0.5rem !important;
         margin-bottom: 0.5rem !important;
       }
-      
+
       /* Other text adjustments */
       .text-lg {
         font-size: 1rem !important;
       }
-      
+
       .section-sub-title {
         font-size: 1.2rem !important;
       }
-      
+
       /* Adjust spacing */
       .mb-4 {
         margin-bottom: 0.75rem !important;
       }
-      
+
       .py-4 {
         padding-top: 1rem !important;
         padding-bottom: 1rem !important;
       }
     }
-    
+
     /* Further reductions for smallest screens */
     @media (max-width: 575px) {
-      .text-7xl, .section-main-title {
+
+      .text-7xl,
+      .section-main-title {
         font-size: 1.5rem !important;
       }
-      
+
       .text-2xl {
         font-size: 1.2rem !important;
       }
@@ -614,7 +625,7 @@
           <div class="carousel-item active">
             <div class="row align-items-center">
               <div class="col-lg-7 mb-5 mb-lg-0">
-                <div class="d-flex justify-content-md-start justify-content-center w-100">
+                <div>
                   <img src="images/hero/hero_logo.jpg" alt="MMK Consultants Logo" class="mmk-logo d-" />
                 </div>
                 <h5 class="text-7xl my-4">MMK Consultants</h5>
@@ -643,7 +654,7 @@
           <div class="carousel-item">
             <div class="row align-items-center">
               <div class="col-lg-7 mb-5 mb-lg-0">
-                <div class="d-flex justify-content-md-start justify-content-center w-100">
+                <div>
                   <img src="images/hero/hero_logo.jpg" alt="MMK Consultants Logo" class="mmk-logo d-" />
                 </div>
                 <h5 class="text-7xl my-4">MMK Consultants</h5>
@@ -671,7 +682,7 @@
           <div class="carousel-item">
             <div class="row align-items-center">
               <div class="col-lg-7 mb-5 mb-lg-0">
-                <div class="d-flex justify-content-md-start justify-content-center w-100">
+                <div>
                   <img src="images/hero/hero_logo.jpg" alt="MMK Consultants Logo" class="mmk-logo d-" />
                 </div>
                 <h5 class="text-7xl my-4">MMK Consultants</h5>
@@ -864,8 +875,10 @@
   <section class="services-section pt-md-5 pb-5 pt-0 my-5">
     <div class="container">
       <div class=" mb-5">
-        <span class="section-light-title">Our Services</span>
-        <h2 class=" text-7xl font-bold text-primary mb-4 pe-lg-5 me-lg-5">
+   <div class="d-flex justify-content-center">
+    <span class="section-light-title ">Our Services</span>
+   </div>
+        <h2 class=" text-7xl font-bold text-primary mb-4 pe-lg-5 me-lg-5  text-center">
           Comprehensive Trade Solutions <br /> Tailored to Your Needs
         </h2>
       </div>
@@ -1281,10 +1294,10 @@
       // Product carousel - duplicate slides
       const productTrack = document.getElementById('productTrack');
       const templateSlide = document.getElementById('productSlideTemplate');
-      
+
       // Remove the ID from the template to avoid duplicate IDs
       templateSlide.removeAttribute('id');
-      
+
       // Duplicate the slide 19 more times (for a total of 20)
       for (let i = 0; i < 19; i++) {
         const clone = templateSlide.cloneNode(true);
@@ -1321,9 +1334,9 @@
       window.addEventListener('resize', updateCarouselSpeed);
 
       // Product carousel mouse interaction
-        let isDown = false;
-        let startX;
-        let scrollLeft;
+      let isDown = false;
+      let startX;
+      let scrollLeft;
 
       if (productTrack) {
         productTrack.addEventListener('mousedown', (e) => {

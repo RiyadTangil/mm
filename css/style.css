@@ -161,6 +161,15 @@
 .main-btn:hover {
   color: var(--base-white);
 }
+.section-lg-title{
+font-family: 'Onest';
+font-style: normal;
+font-weight: 700;
+font-size: 60px;
+line-height: 68px;
+color: #181D27;
+
+}
 .light-btn {
   display: flex;
   flex-direction: row;
@@ -326,6 +335,13 @@
 
   .navbar .nav-item .dropdown-menu {
     padding-left: 30px;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 375px) {
+  .navbar {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
   }
 }
 

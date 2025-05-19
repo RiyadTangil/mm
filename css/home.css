@@ -228,6 +228,7 @@
   padding: 0 8px;
   box-sizing: border-box;
   margin: 0;
+  background-color: #ffffff;
 }
 
 .product-card {
@@ -289,6 +290,7 @@
   .product-item {
     width: 33.333%; /* 3 items on medium screens */
     padding: 0 5px;
+    
   }
 
   .product-card {
@@ -328,12 +330,14 @@
     width: 50%;
     /* 2 items on mobile */
     padding: 0 2px;
+   
     box-sizing: border-box;
   }
 
   .product-slide {
     display: flex;
     flex-wrap: nowrap;
+  
   }
 
   .product-card {
@@ -491,7 +495,7 @@
   .section-main-title {
     font-size: 1.5rem !important;
   }
-
+  
   .text-2xl {
     font-size: 1.2rem !important;
   }
