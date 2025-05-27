@@ -257,17 +257,18 @@
       gap: 0;
       margin: 0;
       padding: 0;
+      background-color: white;
       width: fit-content;
     }
 
     .product-item {
       display: inline-block;
       flex: 0 0 auto;
-      width: 14.285%;
+      width: 13.5%;
       /* Default for desktop: 7 items per row */
       padding: 0 8px;
       box-sizing: border-box;
-      margin: 0;
+      margin: 0 4px;
     }
 
     .product-card {
@@ -312,7 +313,7 @@
     /* Responsive adjustments */
     @media (max-width: 1199.98px) {
       .product-item {
-        width: 25%;
+        width: 25% !important;
         /* 4 items on large screens */
         padding: 0 6px;
       }
@@ -1360,7 +1361,7 @@
           if (!isDown) return;
           e.preventDefault();
           const x = e.pageX;
-          const walk = (x - startX) * 0.5; // Further reduced from 1 to 0.5
+          const walk = (x - startX) * 5; // Further reduced from 1 to 0.5
           productTrack.scrollLeft = scrollLeft - walk;
         });
 
